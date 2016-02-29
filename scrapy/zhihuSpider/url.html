@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dropEffect="none" class="no-js topic-feed-page">
+<head>
+<meta charset="utf-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+
+<title>Python - 热门问答 - 知乎</title>
+
+<meta name="apple-itunes-app" content="app-id=432274380, app-argument=zhihu://topics/19552832">
+
+
+<meta name="description" content="能利用爬虫技术做到哪些很酷很有趣很有用的事情？41773个最新问答，点击查看更多>>" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta http-equiv="mobile-agent" content="format=html5;url=https://www.zhihu.com/topic/19552832">
+<meta id="znonce" name="znonce" content="ce65745dbaca4ad6b48f38ad5ad94303">
+
+
+<link rel="apple-touch-icon" href="https://static.zhihu.com/static/revved/img/ios/touch-icon-152.f361b474.png" sizes="152x152">
+<link rel="apple-touch-icon" href="https://static.zhihu.com/static/revved/img/ios/touch-icon-120.346e7055.png" sizes="120x120">
+<link rel="apple-touch-icon" href="https://static.zhihu.com/static/revved/img/ios/touch-icon-76.3101f5fe.png" sizes="76x76">
+<link rel="apple-touch-icon" href="https://static.zhihu.com/static/revved/img/ios/touch-icon-60.a6575a64.png" sizes="60x60">
+
+
+<link rel="shortcut icon" href="https://static.zhihu.com/static/favicon.ico" type="image/x-icon">
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://static.zhihu.com/static/search.xml" title="知乎" />
+<link rel="stylesheet" href="https://static.zhihu.com/static/revved/-/css/z.07b5669b.css">
+
+
+
+
+
+<!--[if lt IE 9]>
+<script src="https://static.zhihu.com/static/components/respond/dest/respond.min.js"></script>
+<link href="https://static.zhihu.com/static/components/respond/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/static/components/respond/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/static/components/respond/cross-domain/respond.proxy.js"></script>
+<![endif]-->
+<script src="https://static.zhihu.com/static/revved/-/js/instant.4b42dd60.js"></script>
+
+<link rel="canonical" href="https://www.zhihu.com/topic/19552832" />
+
+</head>
+
+<body class="zhi ">
+
+
+
+<div role="navigation" class="zu-top">
+<div class="zg-wrap modal-shifting clearfix" id="zh-top-inner">
+<a href="/" class="zu-top-link-logo" id="zh-top-link-logo" data-za-c="view_home" data-za-a="visit_home" data-za-l="top_navigation_zhihu_logo">知乎</a>
+
+<div class="top-nav-profile">
+<a href="/people/gao-yang-yang-81-46" class="zu-top-nav-userinfo ">
+<span class="name">高阳阳阳阳飞</span>
+<img class="Avatar" src="https://pic4.zhimg.com/00252a1729c7ee718c08762da1b9201b_s.jpg" srcset="https://pic4.zhimg.com/00252a1729c7ee718c08762da1b9201b_xs.jpg 2x" alt="高阳阳阳阳飞" />
+<span id="zh-top-nav-new-pm" class="zg-noti-number zu-top-nav-pm-count"
+style="visibility:hidden" data-count="0">
+
+</span>
+</a>
+<ul class="top-nav-dropdown" id="top-nav-profile-dropdown">
+<li>
+<a href="/people/gao-yang-yang-81-46">
+<i class="zg-icon zg-icon-dd-home"></i>我的主页
+</a>
+</li>
+
+<li>
+<a href="/inbox">
+<i class="zg-icon zg-icon-dd-pm"></i>私信
+<span id="zh-top-nav-pm-count" class="zu-top-nav-pm-count zg-noti-number"
+style="visibility:hidden" data-count="0">
+
+</span>
+</a>
+</li>
+<li>
+<a href="/settings">
+<i class="zg-icon zg-icon-dd-settings"></i>设置
+</a>
+</li>
+<li>
+<a href="/logout">
+<i class="zg-icon zg-icon-dd-logout"></i>退出
+</a>
+</li>
+</ul>
+
+</div>
+
+
+
+<button class="zu-top-add-question" id="zu-top-add-question">提问</button>
+
+
+<div role="search" id="zh-top-search" class="zu-top-search">
+<form method="GET" action="/search" id="zh-top-search-form" class="zu-top-search-form">
+
+
+
+<input type="hidden" name="type" value="question">
+<label for="q" class="hide-text">知乎搜索</label><input type="text" class="zu-top-search-input" id="q" name="q" autocomplete="off" value="" placeholder="搜索问题、话题或人">
+<button type="submit" class="zu-top-search-button"><span class="hide-text">搜索</span><span class="sprite-global-icon-magnifier-dark"></span></button>
+</form>
+</div>
+
+
+
+<div id="zg-top-nav" class="zu-top-nav">
+<ul class="zu-top-nav-ul zg-clear">
+
+<li class="zu-top-nav-li " id="zh-top-nav-home">
+<a class="zu-top-nav-link" href="/" id="zh-top-link-home" data-za-c="view_home" data-za-a="visit_home" data-za-l="top_navigation_home">首页</a>
+</li>
+<li class="top-nav-topic-selector zu-top-nav-li current" id="zh-top-nav-topic">
+<a class="zu-top-nav-link" href="/topic" id="top-nav-dd-topic">话题</a>
+
+</li>
+<li class="zu-top-nav-li " id="zh-top-nav-explore">
+<a class="zu-top-nav-link" href="/explore">发现</a>
+</li>
+
+<li class="top-nav-noti zu-top-nav-li ">
+<a class="zu-top-nav-link" href="javascript:;" id="zh-top-nav-count-wrap" role="button"><span class="mobi-arrow"></span>消息</a>
+</li>
+
+
+
+</ul>
+<div class="zu-top-nav-live zu-noti7-popup zg-r5px no-hovercard" id="zh-top-nav-live-new" role="popup" tabindex="0">
+<div class="zu-top-nav-live-inner zg-r5px">
+<div class="zu-top-live-icon">&nbsp;</div>
+<div class="zu-home-noti-inner" id="zh-top-nav-live-new-inner">
+<div class="zm-noti7-popup-tab-container clearfix" tabindex="0">
+<button class="zm-noti7-popup-tab-item message">
+<span class="icon">消息</span>
+</button>
+<button class="zm-noti7-popup-tab-item user">
+<span class="icon">用户</span>
+</button>
+<button class="zm-noti7-popup-tab-item thanks">
+<span class="icon">赞同和感谢</span>
+</button>
+</div>
+</div>
+<div class="zm-noti7-frame-border top"></div>
+<div class="zm-noti7-frame">
+<div class="zm-noti7-content">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<span class="noti-spinner-loading"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<span class="noti-spinner-loading"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<span class="noti-spinner-loading"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-frame-border bottom"></div>
+<div class="zm-noti7-popup-footer">
+<a href="/notifications" class="zm-noti7-popup-footer-all zg-right">查看全部 &raquo;</a>
+<a href="/settings/notification" class="zm-noti7-popup-footer-set" title="通知设置" ><i class="zg-icon zg-icon-settings"></i></a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="zu-global-notify" id="zh-global-message" style="display:none">
+<div class="zg-wrap">
+<div class="zu-global-nitify-inner">
+<a class="zu-global-notify-close" href="javascript:;" title="关闭" name="close">x</a>
+<span class="zu-global-notify-icon"></span>
+<span class="zu-global-notify-msg"></span>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="zg-wrap zu-main clearfix "  role="main">
+<div class="zu-main-content">
+<div class="zu-main-content-inner">
+
+
+<div itemscope itemtype="https://schema.org/CreativeWork/Topic">
+<div class="topic-avatar" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+<div>
+<a class="zm-entry-head-avatar-link" href="/topic/19552832" id="zh-avartar-edit-form">
+<img alt="Python" src="https://pic1.zhimg.com/3111ec1cc_m.jpg" class="zm-avatar-editor-preview"></a>
+<meta itemprop="image" content="https://pic1.zhimg.com/3111ec1cc_l.jpg" />
+</div>
+
+<span class="zm-entry-head-avatar-edit-button">修改</span>
+
+</div>
+<div class="topic-info">
+<div class="topic-name" id="zh-topic-title">
+<h1 class="zm-editable-content" data-disabled="1">Python</h1>
+
+
+<a href="javascript:;" data-action="/pin-topic/add" class="js-pin zg-gray pin topic-hover-content"><i class="z-icon-pin"></i>设为常去话题</a>
+
+
+<div class="zm-editable-editor-wrap" style="display:none">
+<input type="text" class="zm-editable-editor-input zg-form-text-input" style="width:150px" />
+<span class="zm-command">
+<a href="javascript:;" name="save" class="zg-btn-blue" style="margin:0 15px;">完成</a>
+<a href="javascript:;" name="cancel" class="zm-command-cancel">取消</a>
+</span>
+</div>
+</div>
+
+
+<div class="zm-topic-topbar">
+<div class="zm-topic-topbar-nav">
+
+
+<ul class="zm-topic-topbar-nav-list clearfix">
+
+
+
+<li class="zm-topic-topbar-nav-list-item current">
+<span>动态</span>
+</li>
+
+
+
+<li class="zm-topic-topbar-nav-list-item">
+<a class="zg-link-litblue-normal" href="/topic/19552832/top-answers">精华</a>
+</li>
+
+
+
+<li class="zm-topic-topbar-nav-list-item">
+<a class="zg-link-litblue-normal" href="/topic/19552832/questions">全部问题</a>
+</li>
+
+
+</ul>
+
+</div>
+</div>
+</div>
+<div class="feed-switcher">
+<span class='current'>热门排序</span> | <a href="/topic/19552832/newest">时间排序</a>
+</div>
+<div class="zm-topic-list-container" itemprop="hasPart" itemscope itemtype="http://schema.org/ItemList/QuestionList">
+<div class="zu-top-feed-list" id="zh-topic-feed-list">
+<meta itemprop="questionCount" content="7994" />
+<meta itemprop="topAnswerCount" content="999" />
+<div class="feed-item feed-item-hook  folding combine first-combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2727.32016339" >
+<meta itemprop="answer-id" content="30074025" />
+<meta itemprop="answerCount" content="57" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/36132174">有哪些网站用爬虫爬取能得到很有价值的数据？</a></h2>
+<div class="entry-body "
+data-aid="30074025"
+data-atoken="86602966"
+data-collapsed="False"
+data-created="1455628627"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="0"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="923">923</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">923</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$xiao-song-42-66" href="/people/xiao-song-42-66">小耸</a><span title="一枚在二线城市的轻文艺程序猿" class="bio">，一枚在二线城市的轻文艺程序猿</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="923">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$liming-deng" href="https://www.zhihu.com/people/liming-deng" class="zg-link" title="liming deng">liming deng</a>、</span><span class="user-block"><a data-tip="p$t$chen-ran-59-71" href="https://www.zhihu.com/people/chen-ran-59-71" class="zg-link" title="尘染">尘染</a>、</span><span class="user-block"><a data-tip="p$t$alan-young-85" href="https://www.zhihu.com/people/alan-young-85" class="zg-link" title="Alan Young">Alan Young</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="6659816" data-action="/answer/content" data-author-name="小耸" data-entry-url="/question/36132174/answer/86602966">
+
+<textarea class="content hidden">
+&lt;p&gt;2016年2月19日 update: 新增对雇主的统计&lt;/p&gt;&lt;br&gt;&lt;p&gt;＝＝＝＝＝＝＝＝＝原回答＝＝＝＝＝＝＝＝＝＝&lt;/p&gt;&lt;br&gt;&lt;p&gt;入坑知乎三年有余，数月前灵光闪现，做个网页爬虫，专爬知乎下的精华回答，作统计分析。&lt;br&gt;以下，即是此项目的分析结果，希望能从另一个角度呈现出不一样的知乎。&lt;/p&gt;代码&lt;p&gt;&quot;talk is cheap, show me the code!&quot; －－屁话少说，放码过来。心急的朋友可以直接戳链接看源码，用的是Python3：&lt;br&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/SmileXie/zhihu_crawler&quot; class=&quot;internal&quot;&gt;GitHub - SmileXie/zhihu_crawler&lt;/a&gt;&lt;/p&gt;&lt;b&gt;算法简述&lt;/b&gt;&lt;br&gt;&lt;b&gt;1.爬虫算法&lt;/b&gt;&lt;p&gt;以&lt;a href=&quot;https://www.zhihu.com/topic/19776749/organize/entire&quot; class=&quot;internal&quot;&gt;根话题的话题树&lt;/a&gt;为启始，按广度优先遍历各子话题。话题的遍历深度为3。解析各话题下的精华回答。&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;img src=&quot;https://pic1.zhimg.com/0e7f52da6dfa288f504dd0586bec8aa0_b.png&quot; data-rawwidth=&quot;471&quot; data-rawheight=&quot;613&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;471&quot; data-original=&quot;https://pic1.zhimg.com/0e7f52da6dfa288f504dd0586bec8aa0_r.png&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;2.收集数量&lt;/b&gt;&lt;p&gt;目前收集的信息共计50539个精华回答。&lt;/p&gt;&lt;b&gt;3.分析内容&lt;/b&gt;&lt;ul&gt;&lt;li&gt;精华回答的点赞数，答案长度等；&lt;/li&gt;&lt;li&gt;答题用户的id，点赞数，地区，性别，学历，学校，专业等;&lt;/li&gt;&lt;/ul&gt;&lt;b&gt;统计结果&lt;/b&gt;&lt;br&gt;&lt;b&gt;１.匿名答主&lt;/b&gt;&lt;p&gt;50539篇精华回答中，有3308篇的回答者选择了匿名发布答案。&lt;/p&gt;&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/9323384a4f46942b5ded7674c9af2673_b.png&quot; data-rawwidth=&quot;550&quot; data-rawheight=&quot;300&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;550&quot; data-original=&quot;https://pic4.zhimg.com/9323384a4f46942b5ded7674c9af2673_r.png&quot;&gt;&lt;br&gt;&lt;b&gt;2.答主性别&lt;/b&gt;&lt;p&gt;男15740，女5749．是否从一个侧面印证了知乎上程序员占了很大的比例．&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;img src=&quot;https://pic3.zhimg.com/2b81137dd8a4492b1684cf4e6dbaafbe_b.png&quot; data-rawwidth=&quot;550&quot; data-rawheight=&quot;300&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;550&quot; data-original=&quot;https://pic3.zhimg.com/2b81137dd8a4492b1684cf4e6dbaafbe_r.png&quot;&gt;&lt;br&gt;&lt;b&gt;3.答主受教育情况&lt;/b&gt;&lt;p&gt;按答主的所在（毕业）学校统计，TOP10的学校是：&lt;/p&gt;&lt;br&gt;&lt;img src=&quot;https://pic1.zhimg.com/6ed829ac2f9c76c79f31d3ab6664fcbc_b.png&quot; data-rawwidth=&quot;550&quot; data-rawheight=&quot;300&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;550&quot; data-original=&quot;https://pic1.zhimg.com/6ed829ac2f9c76c79f31d3ab6664fcbc_r.png&quot;&gt;&lt;br&gt;&lt;p&gt;&lt;br&gt;可以看出，中国的顶尖高校对知乎的精华回答贡献颇多。&lt;/p&gt;&lt;p&gt;按答主所在的专业统计，TOP10专业是：&lt;/p&gt;&lt;br&gt;&lt;img src=&quot;https://pic1.zhimg.com/1ae736f1f8bc79125c566ab1be019cd8_b.png&quot; data-rawwidth=&quot;550&quot; data-rawheight=&quot;300&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;550&quot; data-original=&quot;https://pic1.zhimg.com/1ae736f1f8bc79125c566ab1be019cd8_r.png&quot;&gt;&lt;br&gt;&lt;p&gt;&lt;br&gt;果然是程序猿的天堂。（上面的数据，我针对“计算机”和“金融”的数据做了处理，把“计算机”“计算机科学”“计算机科学与技术”合并为“计算机”，把“金融”和“金融学”合并为“金融”）&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;b&gt;4.雇主&lt;/b&gt;&lt;/p&gt;&lt;p&gt;精华回答答主的雇主统计，互联网行业占了大多数。&lt;/p&gt;&lt;img src=&quot;https://pic4.zhimg.com/f018d867f3c0e61156358d4f5b7d814f_b.png&quot; data-rawwidth=&quot;550&quot; data-rawheight=&quot;300&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;550&quot; data-original=&quot;https://pic4.zhimg.com/f018d867f3c0e61156358d4f5b7d814f_r.png&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;5.精华回答的赞同数&lt;/b&gt;&lt;p&gt;按精华回答所获得的赞同数落在的区间，做统计&lt;/p&gt;&lt;br&gt;&lt;img src=&quot;https://pic2.zhimg.com/0e9bea5c4e49a3dbe6c990ee87e553f9_b.png&quot; data-rawwidth=&quot;550&quot; data-rawheight=&quot;300&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;550&quot; data-original=&quot;https://pic2.zhimg.com/0e9bea5c4e49a3dbe6c990ee87e553f9_r.png&quot;&gt;&lt;br&gt;&lt;p&gt;可见，大多数精华回答获得的赞同数是处于0~4999范围内的。&lt;br&gt;目前统计到的最高票回答是这篇：&lt;a href=&quot;https://www.zhihu.com/question/28626263/answer/41992632&quot; class=&quot;internal&quot;&gt;《哪些素质很重要，却是读书学不来的》中肥肥猫的回答&lt;/a&gt;，共获得了91433个赞同。&lt;/p&gt;&lt;b&gt;6.回答字数&lt;/b&gt;&lt;p&gt;如果按以下标准将精华回答按字数分类：&lt;/p&gt;&lt;br&gt;0~99：短篇&lt;br&gt;100~999：中篇&lt;br&gt;1000~9999：长篇&lt;br&gt;10000以上：超长篇&lt;br&gt;&lt;br&gt;&lt;p&gt;那么，精华回答的字数分布如下：&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;img src=&quot;https://pic2.zhimg.com/b08191207ad2b660225ce62ecece87d5_b.png&quot; data-rawwidth=&quot;550&quot; data-rawheight=&quot;300&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;550&quot; data-original=&quot;https://pic2.zhimg.com/b08191207ad2b660225ce62ecece87d5_r.png&quot;&gt;&lt;br&gt;&lt;p&gt;&lt;br&gt;看来各位答主对没少在知乎上码字。长篇的数量甚至超越了短篇和中篇。&lt;br&gt;目前收集到的最长字数回答是：&lt;a href=&quot;https://www.zhihu.com/question/31963067/answer/54079066&quot; class=&quot;internal&quot;&gt;《人究竟能抠到什么程度》中郭永年的回答&lt;/a&gt;，答主扬扬洒洒写了98904字，敢情是在知乎上写小说了啊。&lt;/p&gt;&lt;b&gt;后记&lt;/b&gt;&lt;p&gt;作为一个对Python和C都有使用的程序员，在开发的过程中不断地领略着这两种语言的巨大差异。&lt;br&gt;Python把对开发者友好做到了极致，牺牲了性能。&lt;br&gt;C把性能做到了极致，牺牲了对开发者的友好。&lt;br&gt;这个项目只用了500行Python，如果换作500行C，估计只能完成上述功能的1/10吧。&lt;br&gt;最后再贴一遍源码：&lt;br&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/SmileXie/zhihu_crawler&quot; class=&quot;internal&quot;&gt;GitHub - SmileXie/zhihu_crawler&lt;/a&gt;&lt;/p&gt;
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2016-02-16" target="_blank" href="/question/36132174/answer/86602966">编辑于 昨天 21:02</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+<img src="https://pic1.zhimg.com/0e7f52da6dfa288f504dd0586bec8aa0_200x112.png" data-rawwidth="471" data-rawheight="613" class="origin_image inline-img zh-lightbox-thumb" data-original="https://pic1.zhimg.com/0e7f52da6dfa288f504dd0586bec8aa0_r.png">
+2016年2月19日 update: 新增对雇主的统计＝＝＝＝＝＝＝＝＝原回答＝＝＝＝＝＝＝＝＝＝入坑知乎三年有余，数月前灵光闪现，做个网页爬虫，专爬知乎下的精华回答，作统计分析。以下，即是此项目的分析结果，希望能从另一个角度呈现出不一样的知乎。代码"tal…
+
+<a href="/question/36132174/answer/86602966" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-6659816"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>66 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-6" target="_blank" class="meta-item copyright" data-author-avatar="https://pic1.zhimg.com/28b870d08_m.jpg"> 禁止转载 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2727.32016239" >
+<meta itemprop="answer-id" content="23740228" />
+<meta itemprop="answerCount" content="57" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/36132174">有哪些网站用爬虫爬取能得到很有价值的数据？</a></h2>
+<div class="entry-body "
+data-aid="23740228"
+data-atoken="70798699"
+data-collapsed="False"
+data-created="1446637007"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="0"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="1444">1444</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">1444</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$lin-jun-xiang-96" href="/people/lin-jun-xiang-96">林骏翔</a><span title="金融投资/PS/Python" class="bio">，金融投资/PS/Python</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="1444">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$jerryc" href="https://www.zhihu.com/people/jerryc" class="zg-link" title="JerryC">JerryC</a>、</span><span class="user-block"><a data-tip="p$t$bei-lu-14" href="https://www.zhihu.com/people/bei-lu-14" class="zg-link" title="北陆">北陆</a>、</span><span class="user-block"><a data-tip="p$t$benban" href="https://www.zhihu.com/people/benban" class="zg-link" title="benban">benban</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="6659816" data-action="/answer/content" data-author-name="林骏翔" data-entry-url="/question/36132174/answer/70798699">
+
+<textarea class="content hidden">
+2015.11.14&lt;br&gt;&lt;br&gt;更新神器：&lt;br&gt;1.下面提到的Quandl网站有一个他们自己的Python库，叫Quandl，可惜也是收费的。&lt;br&gt;&lt;blockquote&gt;pip install Quandl&lt;br&gt;&lt;/blockquote&gt;&lt;br&gt;2.&lt;a href=&quot;//link.zhihu.com/?target=http%3A//tushare.org/fundamental.html%23id4&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;TuShare -财经数据接口包&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;  国内好心人做的开源财经数据接口（觉得好的可以捐助一下）。这里几乎可以获取到A股的所有信息了，还包括一些经济数据。重点是他不仅免费，还提供了一个Python库tushare。&lt;br&gt;&lt;br&gt;&lt;blockquote&gt;pip install tushare&lt;br&gt;&lt;br&gt;import tushare as ts&lt;/blockquote&gt;&lt;br&gt;这样一来你便可以通过这个库方便地获取大量A股信息了。&lt;br&gt;&lt;br&gt;&lt;br&gt;——————————————以下为原答案——————————————&lt;br&gt;一大波数据来袭！&lt;br&gt;&lt;br&gt;题主问了有什么网站，能用来做什么。我给出几个API网站吧，做APP用的可能比较多，不过也可以用在日常生活中。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;一、生活服务&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;1.手机话费充值。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/110&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;手机话费充值数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;2.天气查询。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/19&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;天气查询数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;3.快递查询。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/133&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;快递查询服务数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;4.健康食谱。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/54&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;健康食谱数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;5.查医院。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/43&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;医院大全数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;6.水电煤缴费。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/114&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;水电煤缴费数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;7.电影大全。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/29&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;电影大全数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;8.谜语、歇后语、脑筋急转弯。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/86&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;猜一猜数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;9.音乐搜索。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/140&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;音乐搜索接口数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;10.健康知识。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/44&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;健康知识数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;11.百度糯米、团购等信息。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/68&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;糯米开放api数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;12.彩票开奖。&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/services/show/121&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;彩票开奖查询数据服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;以上接口都来自网站：&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.apix.cn/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;APIX_国内领先的云数据服务平台_API接口服务平台&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;细心 的人会发现，这些功能简直是遍地都是啊，支付宝、微信什么的一大堆，哪用那么麻烦！&lt;br&gt;&lt;br&gt;是的，但我相信这些可能为一些不太了解相关信息的人提供了帮助。不过，虽然这些功能很多APP都有，如果自己有空闲时间又懂得编程，不喜欢别人的UI设计，自己做一做也是挺好玩的。比如：&lt;br&gt;&lt;br&gt;生活枯燥了，把这些谜语歇后语等根据个人喜好定时推送到自己的手机，放松身心；&lt;br&gt;把一些健康小知识在空闲时间推送给自己，提醒自己；&lt;br&gt;……&lt;br&gt;&lt;br&gt;国内类似的网站还有：&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=https%3A//www.juhe.cn/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;API数据接口_开发者数据定制&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//apistore.baidu.com/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;API Store_为开发者提供最全面的API服务&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.91cha.com/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;API数据接口_免费数据调用-91查|91cha.com&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;除此之外还有一些门户网站提供了一些API接口，比如豆瓣、新浪、百度等等。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;二、金融数据&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;br&gt;1&lt;/b&gt;.股票&lt;br&gt;①新浪财经&lt;br&gt;最多人用的就是新浪财经了，因为它是免费的，并且使用起来也不难。以下是网上找的教程：&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.cnblogs.com/seacryfly/articles/stock.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;获取历史和实时股票数据接口&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;②东方财富网&lt;br&gt;网站提供了大量信息，也是基本面投资者的好去处。可以查看财务指标或者根据财务指标选股（如净资产收益率）：&lt;a href=&quot;//link.zhihu.com/?target=http%3A//data.eastmoney.com/xuangu/%23Yz1beWxubDAxKDF8MC4wNSldfHM9eWxubDAxKDF8MC4wNSl8c3Q9LTE%3D&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;选股器 _ 数据中心&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;。这些都是很好的投资参考，当然还有其它功能有对应的API，可以自己分析一下。&lt;br&gt;&lt;br&gt;③中财网&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//data.cfi.cn/cfidata.aspx&quot; class=&quot; external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;http://&lt;/span&gt;&lt;span class=&quot;visible&quot;&gt;data.cfi.cn/cfidata.asp&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;&lt;/span&gt;&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;提供各种产品的数据&lt;br&gt;&lt;br&gt;&lt;br&gt;（国内很多功能类似网站，如和讯、网易财经、雪球等等，具体的我没有一一试验就不放上来了，各位可以自己去试试，下同。）&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;2&lt;/b&gt;.大宗商品&lt;br&gt;①&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.goldtoutiao.com/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;黄金头条——用资讯帮你赚钱！炒黄金，看黄金头条！黄金价格&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;这里提供了各种大宗商品的行情，也可以分析获取。包括技术分析方面。&lt;br&gt;&lt;br&gt;②当然还有外国网站：&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.investing.com/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Investing.com&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;3&lt;/b&gt;.美股等综合类（其实新浪财经和东方财富等也算是国内综合的了，就不一一列举了）&lt;br&gt;①Wind资讯。很多机构用的都是这里的数据，当然普通个人是拿不到的，不过如果你是财经院校的学生，他们会提供免费的数据。详见官网。&lt;br&gt;&lt;br&gt;②&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.xignite.com/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Market Data Feed and API&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;外国网站，提供了大量数据，付费。有试用期。&lt;br&gt;&lt;br&gt;③&lt;a href=&quot;//link.zhihu.com/?target=https%3A//www.quandl.com/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Quandl Financial and Economic Data&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;同上。部分免费。&lt;br&gt;&lt;br&gt;④&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.programmableweb.com/news/96-stocks-apis-bloomberg-nasdaq-and-etrade/2013/05/22&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;96 Stocks APIs: Bloomberg, NASDAQ and E*TRADE&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;外国网站整合的96个股票API合集，可以看看。&lt;br&gt;&lt;br&gt;⑤雅虎财经&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.finance.yahoo.com/&quot; class=&quot; external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;http://www.&lt;/span&gt;&lt;span class=&quot;visible&quot;&gt;finance.yahoo.com/&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;&lt;/span&gt;&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=https%3A//hk.finance.yahoo.com/&quot; class=&quot; external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;visible&quot;&gt;hk.finance.yahoo.com/&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;&lt;/span&gt;&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;香港版&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;三、其它&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;撇去上面的API不说，如果单单爬取网页上的内容下来，那就太多可以爬的了。如：&lt;br&gt;&lt;br&gt;&lt;b&gt;1&lt;/b&gt;.爬取网站上的图片。包括贴吧、知乎、Tumblr、轮子哥、XXX（你懂的）。&lt;br&gt;&lt;br&gt;&lt;b&gt;2&lt;/b&gt;.爬取影评、电影资讯、图书等等。比如豆瓣电影。轻轻松松掌握好书好电影。&lt;br&gt;&lt;br&gt;&lt;b&gt;3&lt;/b&gt;.爬取社交网络。比如新浪微博，Twitter。（Twitter提供了API，可以提交关键字等信息爬取搜索结果中的每一条内容。）爬完可以对整个社交网络群体做个分析，情绪、作息、区域……&lt;br&gt;&lt;br&gt;&lt;b&gt;4&lt;/b&gt;.一些网站有你喜欢的文章或者帖子，但是他们没有APP或者是APP做得不友好，你可以直接爬取页面信息推送到手机上。&lt;br&gt;&lt;br&gt;&lt;b&gt;5&lt;/b&gt;.做一个微信公众号。有了上面那么多数据，还怕公众号没东西？生活服务、选股器、行情分析、文章推送等等等。&lt;br&gt;&lt;br&gt;……&lt;br&gt;&lt;br&gt;其它想到再更。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2015-11-04" target="_blank" href="/question/36132174/answer/70798699">编辑于 2015-11-14</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+2015.11.14更新神器：1.下面提到的Quandl网站有一个他们自己的Python库，叫Quandl，可惜也是收费的。pip install Quandl2.<a href="//link.zhihu.com/?target=http%3A//tushare.org/fundamental.html%23id4" class=" wrap external" target="_blank" rel="nofollow noreferrer">TuShare -财经数据接口包<i class="icon-external"></i></a> 国内好心人做的开源财经数据接口（觉得好的可以捐助一下）。这里几乎可以获取到A股的所有信息了，还包括一…
+
+<a href="/question/36132174/answer/70798699" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-6659816"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>41 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-6" target="_blank" class="meta-item copyright" data-author-avatar="https://pic1.zhimg.com/73dc01dec315585c78df955863d5f904_m.jpg"> 禁止转载 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2727.32016139" >
+<meta itemprop="answer-id" content="28044082" />
+<meta itemprop="answerCount" content="57" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/36132174">有哪些网站用爬虫爬取能得到很有价值的数据？</a></h2>
+<div class="entry-body "
+data-aid="28044082"
+data-atoken="81537934"
+data-collapsed="False"
+data-created="1452762589"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="3">3</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">3</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$rcdisk" href="/people/rcdisk">水中柳影</a><span title="IT 自学日记 www.rcdisk.com" class="bio">，IT 自学日记 <a href="//link.zhihu.com/?target=http%3A//www.rcdisk.com" class=" external" target="_blank" rel="nofollow noreferrer"><span class="invisible">http://www.</span><span class="visible">rcdisk.com</span><span class="invisible"></span><i class="icon-external"></i></a></span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="3">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$Wang_Xing" href="https://www.zhihu.com/people/Wang_Xing" class="zg-link" title="王兴">王兴</a>、</span><span class="user-block"><a data-tip="p$t$shaoqiuzheng" href="https://www.zhihu.com/people/shaoqiuzheng" class="zg-link" title="不困">不困</a>、</span><span class="user-block"><a data-tip="p$t$sushengbuhuo" href="https://www.zhihu.com/people/sushengbuhuo" class="zg-link" title="梦一回">梦一回</a></span>
+</span>
+
+
+<span>赞同</span>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="6659816" data-action="/answer/content" data-author-name="水中柳影" data-entry-url="/question/36132174/answer/81537934">
+
+<textarea class="content hidden">
+那首先拍拍知乎吧~&lt;br&gt;自己写个python 爬虫，把喜欢的知乎答案自动推送的kindle上看。 平时上网太多干扰，喜欢静下来断网看。&lt;br&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.rcdisk.com/index.php/group/topic/id-157&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;推送知乎文章到kindle电子书 完整代码 python_小组&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2016-01-14" target="_blank" href="/question/36132174/answer/81537934">编辑于 2016-01-14</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+那首先拍拍知乎吧~自己写个python 爬虫，把喜欢的知乎答案自动推送的kindle上看。 平时上网太多干扰，喜欢静下来断网看。<a href="//link.zhihu.com/?target=http%3A//www.rcdisk.com/index.php/group/topic/id-157" class=" wrap external" target="_blank" rel="nofollow noreferrer">推送知乎文章到kindle电子书 完整代码 python_小组<i class="icon-external"></i></a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-6659816"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine first-combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2727.10113197" >
+<meta itemprop="answer-id" content="30083627" />
+<meta itemprop="answerCount" content="40" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/39522954">自学Python/PHP，我今年20岁，该如何选择?</a></h2>
+<div class="entry-body "
+data-aid="30083627"
+data-atoken="86627004"
+data-collapsed="False"
+data-created="1455637007"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="137">137</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">137</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$shellus" href="/people/shellus">葛佳祥</a><span title="程序员/PHPer/开源爱好者" class="bio">，程序员/PHPer/开源爱好者</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="137">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$wu-lin-25-41" href="https://www.zhihu.com/people/wu-lin-25-41" class="zg-link" title="吴林">吴林</a>、</span><span class="user-block"><a data-tip="p$t$Lolicon-Max" href="https://www.zhihu.com/people/Lolicon-Max" class="zg-link" title="Y师兄">Y师兄</a>、</span><span class="user-block"><a data-tip="p$t$wen-long-jin" href="https://www.zhihu.com/people/wen-long-jin" class="zg-link" title="温龙金">温龙金</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="8016319" data-action="/answer/content" data-author-name="葛佳祥" data-entry-url="/question/39522954/answer/86627004">
+
+<textarea class="content hidden">
+看到楼主，彷佛看到自己。&lt;br&gt;我今年25岁，在深圳，做php开发，月薪过万。&lt;br&gt;&lt;br&gt;&lt;b&gt;初中时迷恋网络游戏，逃课。&lt;/b&gt;&lt;br&gt;为了玩游戏，翻学校围墙。有一次晚上趁着夜色和几个小伙伴搬石头给围墙打了个洞。因同学举报，第二天升旗时被叫上升旗台全校通报批评。&lt;br&gt;后来发展到每天照常回家吃饭，但是假装去学校，实际上是去网吧。没钱也在网吧站着看别人玩。&lt;br&gt;终于，一个礼拜后，老师找到我家里，事情败露。父母教育、说我以后没前途，只能出去捡垃圾这些话，反而激发了我的逆反心理，我不愿意再去学校上学了。&lt;br&gt;&lt;br&gt;&lt;b&gt;14岁，初二辍学在家。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：辍学少年&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：玩游戏，CF、DNF之类的，混迹各个游戏辅助（外挂）YY工会&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：0&lt;br&gt;&lt;/b&gt;什么也没干，用我父母的话说，我该走上社会了，让我好好休息一年，其实我知道他们的意思是让我好好考虑一年，这时候我应该还是有机会回学校的。但是我没有。&lt;br&gt;懵懂的年纪，如何知道悔过。&lt;br&gt;&lt;br&gt;&lt;b&gt;15岁，工地搬砖。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：农民工、童工&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：精易网吧辅助工具（软件），学习如何破解网吧计费系统，玩游戏&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：1500&lt;br&gt;&lt;/b&gt;大约在秋天，我爸托一个朋友带我去武汉打工，以下简称“他”。去了才知道，是一个工地。我是年纪最小的。第一天，我被他带着做湖边的水泥围栏。他是砖匠，我负责提水泥浆给他用。第一天，晒得有些中暑。连续做了3天后受不了，休息了一天。&lt;br&gt;在宿舍，一同做工的人都很好相处。有人沉默寡言，有人经常默默出去嫖妓，有人在床上用DVD看毛片。有人生日时大家也会在宿舍庆祝，用“热得快”，在塑料桶里煮狗肉。有一位大叔还说要收我做干儿子。呵呵。&lt;br&gt;回想起来，在和他们相处之后，我并没有变坏，他们在我心里都是好人。&lt;br&gt;工地没有厕所，只有一个临时搭起来的小棚子。臭气熏天，无处落脚的那种。工友们平时都是到处解决。到工地的建筑物里面解决是常见现象。那天晚上，大约8点多吧。天早已经全黑了。我抹黑到离宿舍不远处的一个在建的凉亭里面尿尿，刚脱了裤子。听见有人过来，立马提上裤子，一个老头过来大声呵斥：“你在做什么”，我说“我在尿尿”，但是他接下来乌拉乌拉的说武汉话我听不懂，然后他就紧紧抓住我的手腕，大声朝有灯光的方向一直喊着什么，接下来我就被老头拉着去了离我们工地不足500米的另外一个队伍承包的工地。老头一喊，几十人从挡雨布盖的临时帐篷冲了出来，老头说的好像是“终于抓到偷东西的贼了”。他们都是身强力壮的，我看到有人手里拿着铁锹和铁棍（这种东西工地上随处都是），他们冲过来，老头说，别打他（指我），但是没人听，开始我被人扇了一耳光，立马感觉到鼻子有血出来了。然后人群都冲过来，然后就昏迷了。&lt;br&gt;醒来时被用绳子反绑在脚手架上。周围没有一个人。挣脱不了绳子。我绝望的冲着黑暗中远处的灯光喊着“救命啊、救命啊”，直到喊不出声了，又冷又怕，望着湖对岸城市的灯光，我沉默了。一个15岁的少年，开始恐惧这个社会了。&lt;br&gt;&lt;br&gt;后来我爸的朋友带人来救了我，第一句话是“你怎么能偷东西”，我说我没有。然后警察来了，带我去医院清理伤口，第二天他带我去派出所讨说法。在派出所等了半天，警察说你们回去吧，他们（指那个工地的负责人）不会来了。第二天，又去派出所。又不了了之。开始对警察失望。&lt;br&gt;&lt;br&gt;三个月后，回家过年了。&lt;br&gt;&lt;br&gt;&lt;b&gt;16岁，制伞厂打工。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：普工&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：玩游戏，网吧破解&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：1500&lt;br&gt;&lt;/b&gt;刚过完年，我妈带我跟着县里职业介绍所的人去惠州打工，一辆大巴车运过去的。在那没几天，我妈就以身体不适为由回家了。&lt;br&gt;说起那个工厂，真是丧尽天良，大多数情况都是早8点到晚9点。偶尔到晚11点。平均一个月休息3天。&lt;br&gt;在这样情况下，我还是晚上偷偷去网吧一两个小时（工厂禁止晚上外出，12点关门没法回宿舍）&lt;br&gt;而且期间使用一些工具破解过网吧的计费系统。工厂附近的网吧很多都是无人值守的那种。&lt;br&gt;因为经常偷跑出去，甚至到后来直接晚上在网吧通宵，趴在键盘上睡两小时，白天回去上班，于是工作时候完全睁不开眼睛。悟性甚高的我，学会了闭着眼睛做事（我做的工序是装伞骨中的滑轮，需要用到滑轮，涤纶线，润滑油）。&lt;br&gt;后来工厂出规定，凡发现夜不归宿者，记大过一次，罚银300两。于是当月我只拿了几百块的工资，后面一个月工厂领导找我谈话劝我离职。&lt;br&gt;于是我拿着几百块钱开始混迹周边网吧，宿舍的行李都没拿。后来钱花完了，饿了好几天只喝自来水，在熟悉的网吧赊账直到被发现身无分文和没有工作了，然后被网吧老板强制打电话回家汇钱过来赎人。&lt;br&gt;&lt;br&gt;&lt;b&gt;17岁，制衣厂打工。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：普工&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：易语言&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：忘了&lt;br&gt;&lt;/b&gt;后来在深圳南山某制衣厂和我哥哥一起做平车工。半年后我哥哥回家了，我又丢了工作混迹网吧，这次没有地方赊账，于是钻研破解计费系统，3个网吧只有一个成功了。后来还是被发现，一个小混混样子的网管叼着烟走过来说：“兄弟，以后别来了”，&lt;br&gt;&lt;br&gt;&lt;b&gt;18岁，&lt;/b&gt;&lt;b&gt;在深圳，流浪。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：流浪汉&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：易语言&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：0&lt;br&gt;&lt;/b&gt;黑暗经历，不愿再提。&lt;br&gt;&lt;br&gt;&lt;b&gt;19岁，&lt;/b&gt;&lt;b&gt;做美发学徒。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：美发学徒&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：玩手机（非智能机）&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：500&lt;br&gt;&lt;/b&gt;回家后，我妈让我去离家不远的理发店做学徒，这时候家里已经买了电脑&lt;br&gt;&lt;br&gt;&lt;b&gt;20岁，造纸厂打工。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：普工&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：易语言，使用易语言实现HTTP服务器。&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：3000&lt;br&gt;&lt;/b&gt;去青岛，在青岛某理发店待了几个月后去了当时女朋友附近的造纸厂。上班时间早8点到晚6点。&lt;br&gt;11月左右，女友回家了，我辞了工作，在附近的城中村租了房子，租金200每月。买了一个二手笔记本电脑，型号：日立。内存512M。&lt;br&gt;每天吃点超市买的煎饼+咸菜偶尔吃泡面几个月。&lt;br&gt;冬天冷到晚上倒的开水放在床头，早上变成一杯冰。&lt;br&gt;在这里，刻苦学习易语言。使用易语言做了一个点卡系统，赚了800元。&lt;br&gt;&lt;br&gt;&lt;b&gt;21岁，福建某工作室做易语言开发。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：易语言程序员&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：易语言，学习GDI+，自绘界面。易语言面向对象，mysql基础知识，html，javascript等。。&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：2000&lt;br&gt;&lt;/b&gt;和当时女友分手后，回家，在家看到易语言论坛有人发了招人的帖子，于是就去了福建，晴天的工作室@晴天，半年后工作室人都走完了，我是最后一个走的。回家了。然后工作室的某个同事说他在河南创立公司了，让我过去。&lt;br&gt;同事“小色”，使用C++，跟他学到一些mysql的知识，和他相处中，理解了很多编程中的疑惑，和对于人生，对于价值观的一些启蒙。&lt;br&gt;同事“王总”，后来河南公司的创立者，他当时在工作室担任APP开发。我说想学。于是在后面三个月我跟着他学习html知识，和AppCan混合开发平台开发手机APP，当时他还送我一个600元左右的智能手机。&lt;br&gt;&lt;br&gt;&lt;b&gt;22岁，河南朋友的公司&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：技术总监（实际上是做APP开发）&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：深入学习javascript，使用css3构建自己的手机前端框架（丑不忍睹）&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：饭都吃不上&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;23岁，河南某公司。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：技术总监（实际上是php开发）&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：thinkphp框架，linux。&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：3000&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;24岁，深圳某公司。&lt;/b&gt;&lt;br&gt;&lt;b&gt;职位：技术总监（实际上是php开发）&lt;/b&gt;&lt;br&gt;&lt;b&gt;学习内容：嵌入式开发&lt;/b&gt;&lt;br&gt;&lt;b&gt;月收入：10000&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;25岁。2016年&lt;/b&gt;&lt;br&gt;&lt;br&gt;彷佛在回顾一生。&lt;br&gt;&lt;br&gt;有人感兴趣再补充每一年的细节。&lt;br&gt;&lt;br&gt;题主你看到吗？20岁，还不晚。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2016-02-16" target="_blank" href="/question/39522954/answer/86627004">编辑于 昨天 11:00</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+看到楼主，彷佛看到自己。我今年25岁，在深圳，做php开发，月薪过万。<b>初中时迷恋网络游戏，逃课。</b>为了玩游戏，翻学校围墙。有一次晚上趁着夜色和几个小伙伴搬石头给围墙打了个洞。因同学举报，第二天升旗时被叫上升旗台全校通报批评。后来发展到每天照常回…
+
+<a href="/question/39522954/answer/86627004" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-8016319"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>41 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2727.10113097" >
+<meta itemprop="answer-id" content="30226026" />
+<meta itemprop="answerCount" content="40" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/39522954">自学Python/PHP，我今年20岁，该如何选择?</a></h2>
+<div class="entry-body "
+data-aid="30226026"
+data-atoken="86982207"
+data-collapsed="False"
+data-created="1455815119"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="16">16</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">16</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$haytoo" href="/people/haytoo">hello</a><span title="著名跑调男歌手 , PHP程序猿 , iOS学习者 ." class="bio">，著名跑调男歌手 , PHP程序猿 , iOS学习者…</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="16">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$su-cheng-72" href="https://www.zhihu.com/people/su-cheng-72" class="zg-link" title="苏诚">苏诚</a>、</span><span class="user-block"><a data-tip="p$t$cai-zhi-xing-9" href="https://www.zhihu.com/people/cai-zhi-xing-9" class="zg-link" title="蔡之行">蔡之行</a>、</span><span class="user-block"><a data-tip="p$t$huang-shan-song-37" href="https://www.zhihu.com/people/huang-shan-song-37" class="zg-link" title="黄山松">黄山松</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="8016319" data-action="/answer/content" data-author-name="hello" data-entry-url="/question/39522954/answer/86982207">
+
+<textarea class="content hidden">
+刚刚看完书准备翻几分钟知乎，看到这个题，决定答一答。&lt;br&gt;我的人生是从初三开始堕落的，之前都是别人家的孩子那种类型。&lt;br&gt;&lt;br&gt;初三开始不知道从哪儿冒出来的勇气，开始敢反抗继父长达约莫10年的家庭暴力，某天提着菜刀追了一圈，终于离婚了，解脱了，顺便也就彻底脱缰的野马刹不住了。&lt;br&gt;&lt;br&gt;浪费了四年，07年高中毕业，那时候想去北大青鸟，因为就听过它，最终没钱未遂。&lt;br&gt;然后去潮州做苦力3个月，弄得现在手腕关节有时候还会响一响痛一痛。&lt;br&gt;3个月后去了深圳电子厂打工，做山寨机，干了半年多，金融危机，回家。&lt;br&gt;&lt;br&gt;08年底在家乡找了一个电脑店当学徒，修了一年多电脑到2010年。&lt;br&gt;2010年突然又开始野马脱缰，看到生人不敢说话的我突然要去挑战销售（听说可以月薪过万），跑到杭州保险公司做电销。&lt;br&gt;&lt;br&gt;10年底回到老家，开始干通讯运维，干了一年多又跑到西藏干运维。&lt;br&gt;西藏干了一段时间又跑回拉萨修电脑，期间认识二个思科网络工程师，听了建议回到成都，考了个 ccna，又考了个华三的无线工程师认证，再次回到拉萨，干起来网络。&lt;br&gt;&lt;br&gt;回到拉萨，安排到山南移动优化 CMCC 信号，干了5天，觉得这辈子不能再这样了，这时候是2014年的3月左右吧应该，记不太清楚了。&lt;br&gt;从04打14，我浪费了整整十年。&lt;br&gt;人有几个十年？&lt;br&gt;说干就干，既然厌倦的西藏，也快26高龄了，人生已然很失败，何不再去尝试完成一下编程大业？&lt;br&gt;然后离职，推掉报销的飞拉萨机票钱，身上还有几百，够买去北京的火车票了。&lt;br&gt;那就出发吧。&lt;br&gt;报了一个培训机构，当时它都还不算培训机构，就是网上放视频的觉得讲得不错，就去了。学费5800，不讲是哪家了。&lt;br&gt;学费是问朋友借的，朋友是在百度贴吧认识的，他当时越新貌似3k，我问他借了6k。&lt;br&gt;说到这里想起过年在家打电话请他吃饭，他忙着陪女朋友还是亲戚什么的没吃成，下次回家再吃。&lt;br&gt;5800学费，学了2个月，精确点是58天，回成都。&lt;br&gt;一边找工作一边恶补视频，睡在表哥的出租屋里，和他挤。&lt;br&gt;找了一个多月，找到工作了。&lt;br&gt;现在，一年的收入平摊下来算，月薪过万。&lt;br&gt;&lt;br&gt;生活开始好起来了，我今年27，编程多久自己算算，有个才上大一的女朋友。&lt;br&gt;&lt;br&gt;别人的故事看得再多&lt;br&gt;都不如立刻把袖子撸起来。&lt;br&gt;我浪费了十年，你现在20岁，我有个希望，希望你不要浪费超过5年，因为我是25开始学编程的，再晚点我就没经验了。&lt;br&gt;祝顺利。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 昨天 01:05" target="_blank" href="/question/39522954/answer/86982207">编辑于 昨天 01:07</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+刚刚看完书准备翻几分钟知乎，看到这个题，决定答一答。我的人生是从初三开始堕落的，之前都是别人家的孩子那种类型。初三开始不知道从哪儿冒出来的勇气，开始敢反抗继父长达约莫10年的家庭暴力，某天提着菜刀追了一圈，终于离婚了，解脱了，顺便也就彻底脱…
+
+<a href="/question/39522954/answer/86982207" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-8016319"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>7 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2727.10112997" >
+<meta itemprop="answer-id" content="30226852" />
+<meta itemprop="answerCount" content="40" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/39522954">自学Python/PHP，我今年20岁，该如何选择?</a></h2>
+<div class="entry-body "
+data-aid="30226852"
+data-atoken="86984282"
+data-collapsed="False"
+data-created="1455816416"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="1">1</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">1</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$ScottLinsz" href="/people/ScottLinsz">ScottLin</a><span title="一个离经叛道的程序员。。。。。。" class="bio">，一个离经叛道的程序员。。。。。。</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="1">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$mr-yang-22-75" href="https://www.zhihu.com/people/mr-yang-22-75" class="zg-link" title="Mr.杨">Mr.杨</a></span>
+</span>
+
+
+<span>赞同</span>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="8016319" data-action="/answer/content" data-author-name="ScottLin" data-entry-url="/question/39522954/answer/86984282">
+
+<textarea class="content hidden">
+靓仔。尝试自己独立做个项目。然后去找工作。有一些小公司并不会在乎你的学历只要求你能够干活。先熬个几年。。从长计议。。不懂可以问我。当然，我不会php。好难
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/39522954/answer/86984282">发布于 昨天 01:26</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+靓仔。尝试自己独立做个项目。然后去找工作。有一些小公司并不会在乎你的学历只要求你能够干活。先熬个几年。。从长计议。。不懂可以问我。当然，我不会php。好难
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-8016319"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine first-combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2726.97131289" >
+<meta itemprop="answer-id" content="27856623" />
+<meta itemprop="answerCount" content="345" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/27621722">能利用爬虫技术做到哪些很酷很有趣很有用的事情？</a></h2>
+<div class="entry-body "
+data-aid="27856623"
+data-atoken="81070075"
+data-collapsed="False"
+data-created="1452511702"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="7683">7683</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">7683</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$DaniloShan" href="/people/DaniloShan">Danilo</a><span title="汪" class="bio">，汪</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="7683">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$zmc-50" href="https://www.zhihu.com/people/zmc-50" class="zg-link" title="ZMC">ZMC</a>、</span><span class="user-block"><a data-tip="p$t$fang-quan-6" href="https://www.zhihu.com/people/fang-quan-6" class="zg-link" title="Ziyu Zhou">Ziyu Zhou</a>、</span><span class="user-block"><a data-tip="p$t$da-tou-92-16" href="https://www.zhihu.com/people/da-tou-92-16" class="zg-link" title="大头">大头</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="3231559" data-action="/answer/content" data-author-name="Danilo" data-entry-url="/question/27621722/answer/81070075">
+
+<textarea class="content hidden">
+&lt;blockquote&gt;彩蛋：&lt;br&gt;&lt;br&gt;彩蛋已关闭，人太多，已经发不过来了－ －&lt;br&gt;&lt;br&gt;本机和VPS不管频率间隔多慢，仍然不断被屏蔽，粗略算了一下多出的3000人如果发完可能要到下周了，所以停掉了&lt;br&gt;&lt;br&gt;骚瑞&lt;/blockquote&gt;&lt;br&gt;为后来的同学解释一下彩蛋怎么回事，顺便对昨晚12点之后收不到彩蛋的同学抱歉（鞠躬），由于人太多，已经发不出去了－ －&lt;br&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;彩蛋是如果赞了这条答案会自动收到一条随机的私信，里面是一则短笑话&lt;/li&gt;&lt;li&gt;笑话是在某网站上爬下来的，一共几十条随机发送&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;起因是昨天写完原答案，突然想到如果加上彩蛋会不会很多人点赞（说我不是骗赞自己也不信）&lt;br&gt;&lt;br&gt;于是写了个小脚本，跑了起来试了一下&lt;br&gt;&lt;br&gt;第一次高潮出现在回答完30分钟后，突然多了一两百的赞，由于私信发送时间间隔太短，挂掉了&lt;br&gt;&lt;br&gt;修复后坚持到了晚上十二点，本机和VPS都不能再持续发送私信，于是停掉了&lt;br&gt;&lt;br&gt;今早起来发现赞又多了3000，崩溃的我决定还是不接着发了。。。&lt;br&gt;&lt;br&gt;代码和逻辑如下：&lt;br&gt;&lt;br&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// 代码不全，只有主要的逻辑&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 用到的库如下：&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'superagent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cheerio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'cheerio'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 首先是这样的一个接口，可以取到某个答案所有赞同的人数&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 每次取会返回10条数据，是编译好的HTML模版，还有下一组数据的地址&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 遍历这10条数据并取到所有人的ID即可&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// config 是Cookie、Host、Referer等配置&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sourceLink&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'https://www.zhihu.com/answer/'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/voters_profile'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getVoterList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;postListLength&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sleepIng&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'waiting'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;sleepIng&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;sleepIng&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;sleep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;getVoterList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ok&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;voterList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;paging&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;paging&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;paging&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;payload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;voterList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cheerio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;voterList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+                &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.zm-rich-follow-btn'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'data-id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;voterIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'new id: '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;voterIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;dupIdLen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dupIdLen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;getVoterList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'https://www.zhihu.com'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;dupIdLen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 在爬取完该接口后，新的点赞人数会暂存在数组中，遍历该数组，并发送请求&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 如请求发送成功，将各ID保存在某一个文件中，如发送失败，等几分钟后重试&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sendPost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hasError&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tempArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;postListLength&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;voterIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'send post'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;voterIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;voterIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hasError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// 处理发送失败的情况，等待5分钟重试&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sleepIng&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'waiting'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;sleepIng&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;sleepIng&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;sleep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;sendPost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'has error'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;})(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;postIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;postList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;postList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// 一波发送完成之前不会启动下一波私信发送&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;postListLength&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'https://www.zhihu.com/inbox/post'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;member_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;postList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;postIndex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;token&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;_xsrf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 这里是发送者的Cookie&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Accept&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*/*&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;application/x-www-form-urlencoded; charset=UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'hasError: '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hasError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;resObj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
+
+                        &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                            &lt;span class=&quot;nx&quot;&gt;resObj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+                            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sleepIng&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                                &lt;span class=&quot;nx&quot;&gt;hasError&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                                &lt;span class=&quot;nx&quot;&gt;sleep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                                &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'waiting'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                                &lt;span class=&quot;nx&quot;&gt;sleepIng&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                                    &lt;span class=&quot;nx&quot;&gt;sleepIng&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                                    &lt;span class=&quot;nx&quot;&gt;sleep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                                    &lt;span class=&quot;nx&quot;&gt;sendPost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+                                &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+                        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ok&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;resObj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                            &lt;span class=&quot;nx&quot;&gt;hasError&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                            &lt;span class=&quot;nx&quot;&gt;sleep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                            &lt;span class=&quot;nx&quot;&gt;tempArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;voterIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                            &lt;span class=&quot;nx&quot;&gt;oldIdList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tempArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                            &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./idlist.json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                            &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+                        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;voterIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'last'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;oldIdList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;voterIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;voterIdList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'run again'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;getVoterList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sourceLink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sendPost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+                &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./idlist.json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldIdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+                &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'done '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'run again'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;getVoterList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sourceLink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sendPost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;代码花了半个小时写的，比较糙，不过跑了一下确实能用，既然已经不发了就不改了，有同学要求就发上来了&lt;br&gt;&lt;br&gt;PS 知乎的策略应该有变化，昨晚12点之前只要对同一个人两条私信不重复，把握好发送时间间隔就没问题，12点之后我的VPS已经不能用了，时间间隔再久也会返回500错误，1点后我的本机也不行了，不断的返回500和403，Cookie也有更新，索性就停掉了&lt;br&gt;&lt;br&gt;这是昨晚爬到的ID&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic3.zhimg.com/c5b1bfc4f8fc2788d4fd7d5aad081a0e_b.png&quot; data-rawwidth=&quot;1270&quot; data-rawheight=&quot;906&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;1270&quot; data-original=&quot;https://pic3.zhimg.com/c5b1bfc4f8fc2788d4fd7d5aad081a0e_r.png&quot;&gt;&lt;br&gt;还有我的视角所看的我的私信列表＝ ＝&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic3.zhimg.com/e77934b2365659981ca660990d0d9b66_b.png&quot; data-rawwidth=&quot;730&quot; data-rawheight=&quot;905&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;730&quot; data-original=&quot;https://pic3.zhimg.com/e77934b2365659981ca660990d0d9b66_r.png&quot;&gt;&lt;br&gt;就酱&lt;br&gt;&lt;br&gt;&lt;br&gt;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝&lt;br&gt;&lt;br&gt;某人有一天书荒了，想要看豆瓣上的高分书，然而豆瓣并没有提供按评分的检索，于是拜托我写一个小东西，要求是能按现有标签来分类检索豆瓣图书，并按分数从高到低排序&lt;br&gt;&lt;br&gt;需求不难，就是数据没有，于是写了个爬虫按标签爬下来豆瓣所有的书&lt;br&gt;&lt;br&gt;爬的时候只爬了分类的列表，这样有书籍的名称，链接，评分，分类，够用了，而且一次请求可以拿到较多的数据，并发不高的情况下能较快的爬完豆瓣所有的书&lt;br&gt;&lt;br&gt;爬数据的时间大概两个多小时左右，每次请求间隔3秒，倒是没被屏蔽&lt;br&gt;&lt;br&gt;代码用node写的，包括外网访问的服务器，基本满足了某人的需要，现在跑在我自己的VPS上，有域名可以直接访问&lt;br&gt;&lt;br&gt;爬完知道豆瓣热门标签下大概有6万多本书，是会不断更新的，所以还要定期爬一下更新一下数据&lt;br&gt;&lt;br&gt;下面是预览，时间所限页面写的糙了点，反正用户就一个－ －&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic3.zhimg.com/8f321ad177b7f820d98aa71c3c0f9aca_b.png&quot; data-rawwidth=&quot;1661&quot; data-rawheight=&quot;964&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;1661&quot; data-original=&quot;https://pic3.zhimg.com/8f321ad177b7f820d98aa71c3c0f9aca_r.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/9c6b853653c8247f316393a3fccb5053_b.png&quot; data-rawwidth=&quot;1663&quot; data-rawheight=&quot;964&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;1663&quot; data-original=&quot;https://pic4.zhimg.com/9c6b853653c8247f316393a3fccb5053_r.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://pic2.zhimg.com/fcf79abbadc896c6874fe2309a91503d_b.png&quot; data-rawwidth=&quot;434&quot; data-rawheight=&quot;777&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;434&quot; data-original=&quot;https://pic2.zhimg.com/fcf79abbadc896c6874fe2309a91503d_r.png&quot;&gt;
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2016-01-11" target="_blank" href="/question/27621722/answer/81070075">编辑于 2016-01-12</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+<img src="https://pic3.zhimg.com/c5b1bfc4f8fc2788d4fd7d5aad081a0e_200x112.png" data-rawwidth="1270" data-rawheight="906" class="origin_image inline-img zh-lightbox-thumb" data-original="https://pic3.zhimg.com/c5b1bfc4f8fc2788d4fd7d5aad081a0e_r.png">
+彩蛋：彩蛋已关闭，人太多，已经发不过来了－ －本机和VPS不管频率间隔多慢，仍然不断被屏蔽，粗略算了一下多出的3000人如果发完可能要到下周了，所以停掉了骚瑞为后来的同学解释一下彩蛋怎么回事，顺便对昨晚12点之后收不到彩蛋的同学抱歉（鞠躬），由于人…
+
+<a href="/question/27621722/answer/81070075" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-3231559"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>240 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2726.97131189" >
+<meta itemprop="answer-id" content="14668992" />
+<meta itemprop="answerCount" content="345" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/27621722">能利用爬虫技术做到哪些很酷很有趣很有用的事情？</a></h2>
+<div class="entry-body "
+data-aid="14668992"
+data-atoken="48177710"
+data-collapsed="False"
+data-created="1431931081"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="0"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="5470">5470</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">5470</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$emily-lou" href="/people/emily-lou">Emily L</a><span title="Buy Side Equity Research / HFT" class="bio">，Buy Side Equity Research / HFT</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="5470">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$2188" href="https://www.zhihu.com/people/2188" class="zg-link" title="2188">2188</a>、</span><span class="user-block"><a data-tip="p$t$leo-xiong-57" href="https://www.zhihu.com/people/leo-xiong-57" class="zg-link" title="leo xiong">leo xiong</a>、</span><span class="user-block"><a data-tip="p$t$yun-dong-51-5" href="https://www.zhihu.com/people/yun-dong-51-5" class="zg-link" title="云东">云东</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="3231559" data-action="/answer/content" data-author-name="Emily L" data-entry-url="/question/27621722/answer/48177710">
+
+<textarea class="content hidden">
+谢邀.&lt;br&gt;&lt;br&gt;2011年夏天我在google实习的时候做了一些Twitter数据相关的开发，之后我看到了一片关于利用twitter上人的心情来预测股市的论文(&lt;a href=&quot;//link.zhihu.com/?target=http%3A//battleofthequants.net/wp-content/uploads/2013/03/2010-10-15_JOCS_Twitter_Mood.pdf&quot; class=&quot; external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;http://&lt;/span&gt;&lt;span class=&quot;visible&quot;&gt;battleofthequants.net/w&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;p-content/uploads/2013/03/2010-10-15_JOCS_Twitter_Mood.pdf&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;&lt;/span&gt;&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;)。实习结束后我跟几个朋友聊了聊，我就想能不能自己做一点twitter的数据挖掘，当时只是想先写个爬虫玩玩，没想最后开发了两年多，抓取了一千多万用户的400亿条tweet。&lt;br&gt;&lt;br&gt;上&lt;img src=&quot;//zhihu.com/equation?tex=%5Cbullet+&quot; alt=&quot;\bullet &quot; eeimg=&quot;1&quot;&gt;分析篇&lt;br&gt;先给大家看一些分析结果吧。大家几点睡觉呢? 我们来统计一下sleep这个词在twitter上出现的频率。&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/23e22bb4494f54ee56cc2368cc7a566b_b.jpg&quot; data-rawwidth=&quot;702&quot; data-rawheight=&quot;405&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;702&quot; data-original=&quot;https://pic4.zhimg.com/23e22bb4494f54ee56cc2368cc7a566b_r.jpg&quot;&gt;&lt;br&gt;看来很多人喜欢在睡前会说一声我睡了。那我们再看一个更有意思的 :&quot;Thursday&quot;这个词的每天出现的频率。&lt;br&gt;&lt;img src=&quot;https://pic1.zhimg.com/431604e4c1697d857f779fd80e402460_b.jpg&quot; data-rawwidth=&quot;674&quot; data-rawheight=&quot;426&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;674&quot; data-original=&quot;https://pic1.zhimg.com/431604e4c1697d857f779fd80e402460_r.jpg&quot;&gt;&lt;br&gt;这里2月2号是周四，不出意料，这一天提到周四的频率最高。而且好像离周四越近这个频率越高。可是，为什么2月1号的频率反而低了呢？是因为2月1号大家不说周四而说明天了（有的人会说2月2号也可以说是今天，但是因为在2月2号提到当天的次数太高，因此还是有很多人用周四这个词）。&lt;br&gt;&lt;br&gt;做了词频统计我们还可以做一些语义分析。我们可以利用unsupervised learning来分析一条tweet的感情色彩。我们对每一条tweet的高兴程度在0至1之间打分，并对每天做平均值，就得到了下面这张图。这里最明显的特征恐怕就是周期性了。是的，大家普遍周末比较高兴。不过这张图的开始和中间有两个点与周期不吻合。如果我告诉你这两天是1月1日和2月14日，那你肯定会想到为什么了，元旦和情人节很多人是很高兴的（不排除slient majority存在的可能）。&lt;br&gt;&lt;img src=&quot;https://pic1.zhimg.com/157aeff47a35d8731dcf4f76763f6974_b.jpg&quot; data-rawwidth=&quot;712&quot; data-rawheight=&quot;412&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;712&quot; data-original=&quot;https://pic1.zhimg.com/157aeff47a35d8731dcf4f76763f6974_r.jpg&quot;&gt;&lt;br&gt;这很有意思，但似乎没什么用啊。那我们来看下面这张图，还是2012年的情感分析，不过这里对用户进行了过滤，只保留了来自投资人和交易员的tweet （根据用户的tweet我们可以估计他/她的职业）。蓝线是这些用户的感情色彩，红线是S&amp;amp;P 500指数。看来行情好的时候大家都高兴啊。&lt;br&gt;&lt;img src=&quot;https://pic2.zhimg.com/d927c42c39d3165be1716ea513a2b4c5_b.jpg&quot; data-rawwidth=&quot;707&quot; data-rawheight=&quot;421&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;707&quot; data-original=&quot;https://pic2.zhimg.com/d927c42c39d3165be1716ea513a2b4c5_r.jpg&quot;&gt;&lt;br&gt;最后我们再来看两个统计图吧。2012年是美国大选年，这里统计了在所有和奥巴马相关的tweet里跟提到经济的tweet占的比例。红线是这个比例，黑线是S&amp;amp;P 500&lt;br&gt;&lt;img src=&quot;https://pic2.zhimg.com/09d2fff37b94bc786aa3dbafbfce2a81_b.jpg&quot; data-rawwidth=&quot;683&quot; data-rawheight=&quot;372&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;683&quot; data-original=&quot;https://pic2.zhimg.com/09d2fff37b94bc786aa3dbafbfce2a81_r.jpg&quot;&gt;&lt;br&gt;貌似和美国经济有负相关性啊！为什么呢，我们看下面的图就明白了。这个比例和美国失业率正相关，而经济和失业率又是负相关的。换句话说，美国人（尤其是共和党的）找不到工作了就开始埋怨奥巴马了。&lt;br&gt;&lt;img src=&quot;https://pic1.zhimg.com/ac10871e9533679eadda21ea14b97e2c_b.jpg&quot; data-rawwidth=&quot;703&quot; data-rawheight=&quot;406&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;703&quot; data-original=&quot;https://pic1.zhimg.com/ac10871e9533679eadda21ea14b97e2c_r.jpg&quot;&gt;&lt;br&gt;除了上面的分析外我做了很多其他的研究，比如如何判断一个用户的职业，验证六度分隔理论, 以及网络扩张速度的建模，不过这里就先不赘述了。&lt;br&gt;&lt;br&gt;最后要说的是以上的分析在统计上都是不严谨的，twitter上的信息杂音非常大，又有很强的demographic bias，有很多因素都没有考虑。我们只能希望大数定律能过弥补一些误差。写在这里只是抛砖引玉，给大家看一下爬虫可以做什么。大家感兴趣的话之后我可以补充一下这两个话题：&lt;br&gt;1. 怎样判断一条tweet的感情色彩&lt;br&gt;2. 怎样估计一个twitter用户的职业&lt;br&gt;&lt;br&gt;下&lt;img src=&quot;//zhihu.com/equation?tex=%5Cbullet+&quot; alt=&quot;\bullet &quot; eeimg=&quot;1&quot;&gt;技术篇 &lt;br&gt;当时Twitter用户大概已经有上亿了，每天新的tweet也有几千万甚至上亿。能不能把这些数据全部抓取下来呢？这是可能的。Twitter是有API的，不过每个IP地址每小时可以抓取150个用户最近的tweet，以这个速度要把几亿个用户抓取一遍需要近一百年。但是，大部分Twitter用户是不活跃甚至从来不发tweet的，还有很多用户是印尼等国家（不是他们不重要，我真的看不懂他们发的tweet），如果我们把不说英语，不发tweet以及follow人数不超过5个（好像注册twitter后用户会被要求follow 5个人）的用户过滤掉，我们就剩下了大约10,000,000个用户，十年就可以搞定了。&lt;br&gt;&lt;br&gt;十年好像还是太长了。。。不过twitter的访问限制是基于IP地址的，只要我从多个IP访问twitter不久好了(我真的没有DDOS twitter的意思啊)？那么下一步就是搜集大量代理服务器来访问twitter api。为了做twitter的爬虫我专门做了一个爬虫去搜集免费代理服务器。免费的东西总是有代价的，这些服务器非常不稳定。因此我又建立了一套代理服务器管理系统，定期更新IP地址，删除不能用的服务器。最后这套系统平均每天有几百个可用的服务器，大约半个月就可以把一千万个用户抓取一遍了。&lt;br&gt;&lt;br&gt;此外我又做了一些动态优化，根据twitter用户的follower数量决定他们的抓取频率，以提高重要用户tweet的实时性。&lt;br&gt;&lt;br&gt;在一年半的时间里，这套系统一共抓取了400亿条tweet，加起来得有10TB，估计占来自美国tweet数量的一半左右。那么问题来了，怎么存贮这些tweet呢？如果要做分析的话恐怕把数据读一遍就要好几天了。很多人马上会说hadoop, cassandra, spark等等。不过作为一个穷学生我哪里有钱去做一个cluster呢？这些数据存在AWS上就得每月1000刀了。&lt;br&gt;&lt;br&gt;自己动手，丰衣足食。解决方案就是自己组装一个服务器，买了8块3T硬盘做了一个12TB的磁盘矩阵放在寝室里。&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/c6825840bd66b91168422cfae89e18cf_b.jpg&quot; data-rawwidth=&quot;578&quot; data-rawheight=&quot;408&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;578&quot; data-original=&quot;https://pic4.zhimg.com/c6825840bd66b91168422cfae89e18cf_r.jpg&quot;&gt;&lt;br&gt;软件使用了最为传统的MySQL，这是一个存了400亿条数据的MySQL数据库。我花了大量时间去做优化，尝试了各种各样的partition, ordering, indexing。最后可以实现一天之内对100-200亿条数据进行线型搜索或过滤，或者几秒钟内调取某一天的或某一条tweet。&lt;br&gt;&lt;br&gt;这台服务器现在留在了MIT，毕业后我把它提供给了一位教授做研究。&lt;br&gt;&lt;br&gt;PS:&lt;br&gt;这个项目在2013年停止了，因为social media已经不在火，而且twitter于2013年中关闭了相关的API接口。&lt;br&gt;这个项目的初衷是学术性质的，我不想违反twitter的服务条款，因此这些数据没有被出售或者用来谋求商业价值，而是留给了MIT做研究。&lt;br&gt;在这期间与几个朋友进行了很愉快的合作，未征得他们允许就不在此提名了。&lt;br&gt;暂时没有开源的打算，因为当时水平有限，代码写得太丑了（用java写的）。&lt;br&gt;&lt;br&gt;PS2：&lt;br&gt;很多人问怎么找代理服务器，请大家google一下吧。当然如果不能翻墙的话有代理服务器恐怕也不能用。&lt;br&gt;&lt;br&gt;谢绝转载。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2015-05-18" target="_blank" href="/question/27621722/answer/48177710">编辑于 2015-05-19</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+<img src="https://pic4.zhimg.com/23e22bb4494f54ee56cc2368cc7a566b_200x112.jpg" data-rawwidth="702" data-rawheight="405" class="origin_image inline-img zh-lightbox-thumb" data-original="https://pic4.zhimg.com/23e22bb4494f54ee56cc2368cc7a566b_r.jpg">
+谢邀.2011年夏天我在google实习的时候做了一些Twitter数据相关的开发，之后我看到了一片关于利用twitter上人的心情来预测股市的论文(<a href="//link.zhihu.com/?target=http%3A//battleofthequants.net/wp-content/uploads/2013/03/2010-10-15_JOCS_Twitter_Mood.pdf" class=" external" target="_blank" rel="nofollow noreferrer"><span class="invisible">http://</span><span class="visible">battleofthequants.net/w</span><span class="invisible">p-content/uploads/2013/03/2010-10-15_JOCS_Twitter_Mood.pdf</span><span class="ellipsis"></span><i class="icon-external"></i></a>)。实习结束后我跟几个朋友聊了聊，我就想能不能自己做一点twitter的数据挖掘，当时只是想先写个爬虫…
+
+<a href="/question/27621722/answer/48177710" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-3231559"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>418 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-6" target="_blank" class="meta-item copyright" data-author-avatar="https://pic3.zhimg.com/f7cf1c39e_m.jpg"> 禁止转载 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2726.97131089" >
+<meta itemprop="answer-id" content="15902818" />
+<meta itemprop="answerCount" content="345" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/27621722">能利用爬虫技术做到哪些很酷很有趣很有用的事情？</a></h2>
+<div class="entry-body "
+data-aid="15902818"
+data-atoken="51254997"
+data-collapsed="False"
+data-created="1434203697"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="3303">3303</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">3303</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$yemo" href="/people/yemo">张航哥</a><span title="独立开发者 http://zh.my" class="bio">，独立开发者 <a href="//link.zhihu.com/?target=http%3A//zh.my" class=" external" target="_blank" rel="nofollow noreferrer"><span class="invisible">http://</span><span class="visible">zh.my</span><span class="invisible"></span><i class="icon-external"></i></a></span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="3303">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$cmmaimm" href="https://www.zhihu.com/people/cmmaimm" class="zg-link" title="子衿">子衿</a>、</span><span class="user-block"><a data-tip="p$t$lu-teng-52" href="https://www.zhihu.com/people/lu-teng-52" class="zg-link" title="鹿腾">鹿腾</a>、</span><span class="user-block"><a data-tip="p$t$ke-la-49" href="https://www.zhihu.com/people/ke-la-49" class="zg-link" title="坷拉">坷拉</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="3231559" data-action="/answer/content" data-author-name="张航哥" data-entry-url="/question/27621722/answer/51254997">
+
+<textarea class="content hidden">
+把学校所有重要的在线服务用爬虫集合成了一套JSON API ，然后开发成了App，并且加了一个类似微信朋友圈的功能，可以说是校友圈吧。全校同学和同班同学都可以通过它互相交流，和微信不同的是，同班之间的交流会有消息推送。&lt;br&gt;&lt;br&gt;App有iOS版和Android版，可以下载并查看教学文档和习题文件，老师有新的通告也会发推送给同学们，还可以查看成绩，课程表，考试时间，个人财务，校园新闻，出勤率等。&lt;br&gt;&lt;br&gt;目前基本全校都在使用。 一个人开发了两个月。App名字叫&lt;b&gt;MMUBee&lt;/b&gt;&lt;br&gt;开发这个App，我一毛钱都没赚，每年还赔进去四百多美元的开发者注册费和VPS租用费。两个月里也基本上起早贪黑的做。没太多原因，就是喜欢做东西。&lt;br&gt;&lt;br&gt;我不经常去上课，不过去的时候都可以看见大家在用MMUbee，有一次一个同学打开MMUbee然后对着我说，你快来下载MMUbee，It's awesome!，我说这是我开发的，他没反应过来，过了5秒钟，一脸兴奋的问我Are u kidding me？类似的事情还有很多，比如在上课的时候老师会说，大家不许把考试答案发在MMUbee里。&lt;br&gt;MMUbee的校友圈里，前两个月90%的Post都是好评。Twitter和Facebook上也都是同学们的一片叫好声，校内论坛更是沸沸扬扬了一段时间。虽然MMUbee本身没有盈利，却给我带来了很多机遇，通过这些机遇做了一个上市公司的项目，赚了一大笔。&lt;br&gt;&lt;br&gt;&lt;b&gt;MMUbee Android: &lt;/b&gt;&lt;a href=&quot;//link.zhihu.com/?target=https%3A//play.google.com/store/apps/details%3Fid%3Dmy.zh.mmubee%26hl%3Den&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;MMUbee - Android Apps on Google Play&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;b&gt;MMUbee iOS: &lt;/b&gt;&lt;a href=&quot;//link.zhihu.com/?target=https%3A//itunes.apple.com/my/app/mmubee/id953221700%3Fmt%3D8&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;MMUbee on the App Store on iTunes&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic1.zhimg.com/ba0794012626ff68f4a1b658e943987c_b.jpg&quot; data-rawwidth=&quot;2048&quot; data-rawheight=&quot;1360&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;2048&quot; data-original=&quot;https://pic1.zhimg.com/ba0794012626ff68f4a1b658e943987c_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;校友圈：&lt;/b&gt;&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/4e76c005e77327bf15623a8cffb82873_b.jpg&quot; data-rawwidth=&quot;640&quot; data-rawheight=&quot;1136&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;640&quot; data-original=&quot;https://pic4.zhimg.com/4e76c005e77327bf15623a8cffb82873_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;多媒体教学系统，列表里是我这学期拿的课，点进去后是老师的通告和课件下载：&lt;/b&gt;&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/4c6a853eaebb6e6c48561c7437e1275b_b.jpg&quot; data-rawwidth=&quot;640&quot; data-rawheight=&quot;1136&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;640&quot; data-original=&quot;https://pic4.zhimg.com/4c6a853eaebb6e6c48561c7437e1275b_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;老师的通告：&lt;/b&gt;&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/f1bb90ea97508f336b817eb1be16f177_b.jpg&quot; data-rawwidth=&quot;640&quot; data-rawheight=&quot;1136&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;640&quot; data-original=&quot;https://pic4.zhimg.com/f1bb90ea97508f336b817eb1be16f177_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;课程表，出勤，校历，考试时间表，考试成绩等等。&lt;/b&gt;&lt;br&gt;&lt;img src=&quot;https://pic2.zhimg.com/98f1ba98fa6603574621457cfae4c855_b.jpg&quot; data-rawwidth=&quot;640&quot; data-rawheight=&quot;1136&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;640&quot; data-original=&quot;https://pic2.zhimg.com/98f1ba98fa6603574621457cfae4c855_r.jpg&quot;&gt;
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2015-06-13" target="_blank" href="/question/27621722/answer/51254997">编辑于 2015-06-15</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+<img src="https://pic1.zhimg.com/ba0794012626ff68f4a1b658e943987c_200x112.jpg" data-rawwidth="2048" data-rawheight="1360" class="origin_image inline-img zh-lightbox-thumb" data-original="https://pic1.zhimg.com/ba0794012626ff68f4a1b658e943987c_r.jpg">
+把学校所有重要的在线服务用爬虫集合成了一套JSON API ，然后开发成了App，并且加了一个类似微信朋友圈的功能，可以说是校友圈吧。全校同学和同班同学都可以通过它互相交流，和微信不同的是，同班之间的交流会有消息推送。App有iOS版和Android版，可以下载…
+
+<a href="/question/27621722/answer/51254997" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-3231559"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>351 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine first-combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2726.60759611" >
+<meta itemprop="answer-id" content="25778163" />
+<meta itemprop="answerCount" content="26" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/38192299">你见过哪些令你瞠目结舌的爬虫技巧？</a></h2>
+<div class="entry-body "
+data-aid="25778163"
+data-atoken="75884957"
+data-collapsed="False"
+data-created="1449589221"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="416">416</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">416</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$wang-zi-an-13" href="/people/wang-zi-an-13">白水大人</a><span title="大二/信息安全" class="bio">，大二/信息安全</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="416">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$zhaoyang-shao" href="https://www.zhihu.com/people/zhaoyang-shao" class="zg-link" title="Zhaoyang Shao">Zhaoyang Shao</a>、</span><span class="user-block"><a data-tip="p$t$sanyuanyuan" href="https://www.zhihu.com/people/sanyuanyuan" class="zg-link" title="善元">善元</a>、</span><span class="user-block"><a data-tip="p$t$xu_cc" href="https://www.zhihu.com/people/xu_cc" class="zg-link" title="许程冲">许程冲</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="7484128" data-action="/answer/content" data-author-name="白水大人" data-entry-url="/question/38192299/answer/75884957">
+
+<textarea class="content hidden">
+这几天写了一个爬虫，这是我关于反爬虫的一些总结&lt;a class=&quot;internal&quot; href=&quot;http://zhuanlan.zhihu.com/python-hacker/20520370&quot;&gt;： 常见的反爬虫和应对方法 - Python Hacker - 知乎专栏&lt;/a&gt;&lt;br&gt;&lt;br&gt;刚开始写爬虫用的是urllib2，后来知道了requests，惊为天人。&lt;br&gt;刚开始解析网页用的是re，后来知道了BeautifulSoup，解析页面不能再轻松。&lt;br&gt;再后来看别人的爬虫，知道了scrapy，被这个框架惊艳到了。&lt;br&gt;之后遇到了一些有验证码的网站，于是知道了PIL。但后来知道了opencv，pybrain。当在爬虫中用上人工神经网络识别出验证码，兴奋得守在爬虫旁边看他爬完全站。&lt;br&gt;再后来知道了threading，知道了celery。&lt;br&gt;&lt;br&gt;不断的学习，不断的接触和知道更多的东西，爬虫与反爬虫的对抗会一直进行下去。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2015-12-08" target="_blank" href="/question/38192299/answer/75884957">编辑于 2016-01-21</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+这几天写了一个爬虫，这是我关于反爬虫的一些总结<a class="internal" href="http://zhuanlan.zhihu.com/python-hacker/20520370">： 常见的反爬虫和应对方法 - Python Hacker - 知乎专栏</a>刚开始写爬虫用的是urllib2，后来知道了requests，惊为天人。刚开始解析网页用的是re，后来知道了BeautifulSoup，解析页面不能再轻松。再后来看别人的…
+
+<a href="/question/38192299/answer/75884957" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-7484128"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>47 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2726.60759511" >
+<meta itemprop="answer-id" content="26021807" />
+<meta itemprop="answerCount" content="26" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/38192299">你见过哪些令你瞠目结舌的爬虫技巧？</a></h2>
+<div class="entry-body "
+data-aid="26021807"
+data-atoken="76492711"
+data-collapsed="False"
+data-created="1449935921"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="144">144</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">144</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$xlzd" href="/people/xlzd">xlzd</a><span title="xlzd.me - 技术宅，专栏作者，软件工程师。" class="bio">，<a href="//link.zhihu.com/?target=http%3A//xlzd.me" class=" external" target="_blank" rel="nofollow noreferrer"><span class="invisible">http://</span><span class="visible">xlzd.me</span><span class="invisible"></span><i class="icon-external"></i></a> - 技术宅，专栏作…</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="144">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$yuan-yuan-tou" href="https://www.zhihu.com/people/yuan-yuan-tou" class="zg-link" title="无许尼夏">无许尼夏</a>、</span><span class="user-block"><a data-tip="p$t$iguo-zhang" href="https://www.zhihu.com/people/iguo-zhang" class="zg-link" title="Arlen">Arlen</a>、</span><span class="user-block"><a data-tip="p$t$jin-eric-40" href="https://www.zhihu.com/people/jin-eric-40" class="zg-link" title="See What">See What</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="7484128" data-action="/answer/content" data-author-name="xlzd" data-entry-url="/question/38192299/answer/76492711">
+
+<textarea class="content hidden">
+顺便更新：&lt;br&gt;最近在知乎专栏更新一系列爬虫经验总结，算不上令人膛目结舌，欢迎围观。地址：&lt;a href=&quot;http://zhuanlan.zhihu.com/xlz-d&quot; class=&quot;internal&quot;&gt;xlzd杂谈 - 知乎专栏&lt;/a&gt;&lt;br&gt;&lt;br&gt;----------------------------------&lt;br&gt;众所周知，爬虫很容易遇到被封IP的情况，最近跟国外一家公司有一点联系，了解到他们做过一件很有意思的事情，跟大家一起分享分享。对于IP被封，大多数情况下是可以换代理来解决的。于是这家公司做了两件事情：&lt;br&gt;&lt;br&gt;第一，开发了一款软件，包括Android/iOS/WP/OS X/Windows/Linux全平台支持，使用这个软件就可以翻墙出去了（不只是中国有翻墙的需求哟，也不只是有墙的时候才需要翻），但是你免费使用他的翻墙服务的同时，需要接受一条协议：将自己的终端作为这个系统代理出墙的一个节点。&lt;br&gt;&lt;br&gt;第二，一套动态分配代理IP的系统。主要是对于爬虫，需要使用代理IP的时候，只需要设置一个特定的proxy，连接到他们的系统之后，会自动从目前活跃的终端节点中挑选一个代理你的请求，你不需要一直切换代理，却可以每次请求使用不一样的出口IP。&lt;br&gt;&lt;br&gt;这个系统大概有2000多万用户使用代理服务，意味着有2000万IP代理可用，基本上可以解决大多数IP被封的问题了。而第二步中的服务，价格是500美元每月（不限时间，限制流量），而且在称为付费用户之前，还得经过一次Skype的面试。&lt;br&gt;&lt;br&gt;这算是一个不错的爬虫技巧了，不但解决了代理不够的难题，还为他人爬虫问题提供了简单粗暴的解决方案，总之钱能够解决的问题就是小问题。后来，这家公司自己不再抓取数据了，改为出售代理IP，活得非常滋润。&lt;br&gt;&lt;br&gt;&lt;br&gt;－－－－－－－－－－－－&lt;br&gt;既然大家都对这家公司感兴趣，网址如下：&lt;a href=&quot;//link.zhihu.com/?target=https%3A//luminati.io/&quot; class=&quot; external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;visible&quot;&gt;luminati.io/&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;&lt;/span&gt;&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2015-12-12" target="_blank" href="/question/38192299/answer/76492711">编辑于 2015-12-14</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+顺便更新：最近在知乎专栏更新一系列爬虫经验总结，算不上令人膛目结舌，欢迎围观。地址：<a href="http://zhuanlan.zhihu.com/xlz-d" class="internal">xlzd杂谈 - 知乎专栏</a>----------------------------------众所周知，爬虫很容易遇到被封IP的情况，最近跟国外一家公司有一点联系，了解到他们做过一件很有意思的事情…
+
+<a href="/question/38192299/answer/76492711" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-7484128"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>23 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2726.60759411" >
+<meta itemprop="answer-id" content="25582134" />
+<meta itemprop="answerCount" content="26" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/38192299">你见过哪些令你瞠目结舌的爬虫技巧？</a></h2>
+<div class="entry-body "
+data-aid="25582134"
+data-atoken="75395789"
+data-collapsed="False"
+data-created="1449321521"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="9">9</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">9</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$kehao95" href="/people/kehao95">柯豪</a><span title="我只是个弱鸡" class="bio">，我只是个弱鸡</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="9">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$zzj0990" href="https://www.zhihu.com/people/zzj0990" class="zg-link" title="zzj0990">zzj0990</a>、</span><span class="user-block"><a data-tip="p$t$jasonbu" href="https://www.zhihu.com/people/jasonbu" class="zg-link" title="卜霞森">卜霞森</a>、</span><span class="user-block"><a data-tip="p$t$yu-long-jun" href="https://www.zhihu.com/people/yu-long-jun" class="zg-link" title="于龙君">于龙君</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="7484128" data-action="/answer/content" data-author-name="柯豪" data-entry-url="/question/38192299/answer/75395789">
+
+<textarea class="content hidden">
+最近刚刚研究&lt;a href=&quot;//link.zhihu.com/?target=http%3A//kehao.me/2015/python%25e5%25bc%2582%25e6%25ad%25a5-%25e5%25ae%259e%25e6%2588%2598-2/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Python异步实战&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;充分利用Python 3.5 async/await 语法构建一个异步爬虫，源码也就200行 &lt;a href=&quot;//link.zhihu.com/?target=https%3A//github.com/kehao95/aiolearn&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;kehao95/aiolearn · GitHub&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;，自认为还是比较优雅的。 &lt;br&gt;对于特定情况可以降低复杂度。&lt;br&gt;&lt;img src=&quot;https://pic2.zhimg.com/ecb915536013ce49d64e9ed359a80519_b.png&quot; data-rawwidth=&quot;743&quot; data-rawheight=&quot;461&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;743&quot; data-original=&quot;https://pic2.zhimg.com/ecb915536013ce49d64e9ed359a80519_r.png&quot;&gt;
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2015-12-05" target="_blank" href="/question/38192299/answer/75395789">编辑于 2015-12-08</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+<img src="https://pic2.zhimg.com/ecb915536013ce49d64e9ed359a80519_200x112.png" data-rawwidth="743" data-rawheight="461" class="origin_image inline-img zh-lightbox-thumb" data-original="https://pic2.zhimg.com/ecb915536013ce49d64e9ed359a80519_r.png">
+最近刚刚研究<a href="//link.zhihu.com/?target=http%3A//kehao.me/2015/python%25e5%25bc%2582%25e6%25ad%25a5-%25e5%25ae%259e%25e6%2588%2598-2/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Python异步实战<i class="icon-external"></i></a>充分利用Python 3.5 async/await 语法构建一个异步爬虫，源码也就200行 <a href="//link.zhihu.com/?target=https%3A//github.com/kehao95/aiolearn" class=" wrap external" target="_blank" rel="nofollow noreferrer">kehao95/aiolearn · GitHub<i class="icon-external"></i></a>，自认为还是比较优雅的。 对于特定情况可以降低复杂度。
+
+<a href="/question/38192299/answer/75395789" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-7484128"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>2 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine first-combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2726.45900433" >
+<meta itemprop="answer-id" content="13117288" />
+<meta itemprop="answerCount" content="22" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/29372574">Python 的练手项目有哪些值得推荐？</a></h2>
+<div class="entry-body "
+data-aid="13117288"
+data-atoken="44306620"
+data-collapsed="False"
+data-created="1428562840"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="1187">1187</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">1187</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<span class="name">匿名用户</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="1187">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$quan-quan" href="https://www.zhihu.com/people/quan-quan" class="zg-link" title="权泉">权泉</a>、</span><span class="user-block"><a data-tip="p$t$lecsven" href="https://www.zhihu.com/people/lecsven" class="zg-link" title="lecsven">lecsven</a>、</span><span class="user-block"><a data-tip="p$t$bu-shuo-27-66" href="https://www.zhihu.com/people/bu-shuo-27-66" class="zg-link" title="卜硕">卜硕</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="3931839" data-action="/answer/content" data-author-name="匿名用户" data-entry-url="/question/29372574/answer/44306620">
+
+<textarea class="content hidden">
+10个Python练手项目：&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-practice-1.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习一：即时标记&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-reportlab.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习二：画幅好画&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-pro-powerfullxml.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习三：万能的XML&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-pro4-newsagent.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习四：新闻聚合&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project5-socketchat.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习五：虚拟茶话会&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project6-cgi.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习六：使用CGI进行远程编辑&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project7-board.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习七：自定义公告板&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project8-xml-rpc.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习八：使用XML-RPC进行远程文件共享&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project9-p2p-gui.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习九：文件共享2-GUI版本&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project10-diy-game.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;python项目练习十：DIY街机游戏&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;其实，我觉得LZ可以找份兼职或者实习做做，既能锻炼能力还能有份额外的收入
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/29372574/answer/44306620">发布于 2015-04-09</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+10个Python练手项目：<a href="//link.zhihu.com/?target=http%3A//www.the5fire.com/python-practice-1.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">python项目练习一：即时标记<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=http%3A//www.the5fire.com/python-reportlab.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">python项目练习二：画幅好画<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=http%3A//www.the5fire.com/python-pro-powerfullxml.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">python项目练习三：万能的XML<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=http%3A//www.the5fire.com/python-pro4-newsagent.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">python项目练习四：新闻聚合<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project5-socketchat.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">python项目练习五：虚拟茶话会<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project6-cgi.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">python项目练习六：使用CGI进行远程编辑<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project7-board.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">python项目练习七：自定义公告板<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=http%3A//www.the5fire.com/python-project8-xml-rpc.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">python项目练习八：…<i class="icon-external"></i></a>
+
+<a href="/question/29372574/answer/44306620" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-3931839"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>125 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2726.45900333" >
+<meta itemprop="answer-id" content="29997714" />
+<meta itemprop="answerCount" content="22" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/29372574">Python 的练手项目有哪些值得推荐？</a></h2>
+<div class="entry-body "
+data-aid="29997714"
+data-atoken="86412439"
+data-collapsed="False"
+data-created="1455533841"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="165">165</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">165</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$lin-qian-qian" href="/people/lin-qian-qian">林茜茜</a><span title="说人话的 Python 分享，微信号：easypython" class="bio">，说人话的 Python 分享，微信号：easypython</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="165">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$tenyearssephiroth" href="https://www.zhihu.com/people/tenyearssephiroth" class="zg-link" title="索碧桐">索碧桐</a>、</span><span class="user-block"><a data-tip="p$t$xue-qiu-80-56" href="https://www.zhihu.com/people/xue-qiu-80-56" class="zg-link" title="雪球">雪球</a>、</span><span class="user-block"><a data-tip="p$t$faith-curtis" href="https://www.zhihu.com/people/faith-curtis" class="zg-link" title="可有可无的逗比L">可有可无的逗比L</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="3931839" data-action="/answer/content" data-author-name="林茜茜" data-entry-url="/question/29372574/answer/86412439">
+
+<textarea class="content hidden">
+发现这个问题下面的大多数回答都不适合初学者。找不到好的练手项目可能是新手最头疼的问题。&lt;br&gt;&lt;br&gt;明明知道，只有动手做点东西出来，才能真正学会编程。&lt;br&gt;&lt;br&gt;然而，很难找到适合学习的编程项目。Github 源码，看不懂。九九乘法表之类的项目，太无聊。跟着视频课程敲一遍，等到自己写的时候还是不会。&lt;br&gt;&lt;br&gt;为了解救大部分新手的这个问题，为你们量身定制了一个综合的爬虫系统实战项目：爬取10w 以上的二手商品数据存储在 MongoDB中，进行数据统计，然后用 Django 网站展示二手商品行情。&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/0ceeca4f258179e2744011e2ffda1d07_b.png&quot; data-rawwidth=&quot;600&quot; data-rawheight=&quot;369&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;600&quot; data-original=&quot;https://pic4.zhimg.com/0ceeca4f258179e2744011e2ffda1d07_r.png&quot;&gt;&lt;br&gt;&lt;br&gt;项目覆盖的技能点比较广，又有爬虫、又有 MongoDB、又有 Django，从后端写到前端。所以把这个大的项目拆解成了4个小的目标，让新手也能由浅入深的完成。&lt;br&gt;&lt;br&gt;&lt;br&gt;▋&lt;b&gt;目标1：学会爬取大多数网页&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/01ba5ce0ae09d18d53d23aa9bc0aced3_b.png&quot; data-rawwidth=&quot;600&quot; data-rawheight=&quot;368&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;600&quot; data-original=&quot;https://pic4.zhimg.com/01ba5ce0ae09d18d53d23aa9bc0aced3_r.png&quot;&gt;&lt;br&gt;&lt;br&gt;很多人学 Python 就是为了做爬虫吧，直接爬取第一手信息，还是很实用的技能。&lt;br&gt;&lt;br&gt;&lt;br&gt;▋&lt;b&gt;目标2：学会爬取10w 以上的大规模数据&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/db3639627a347d0cb9ce1381b6cf2623_b.png&quot; data-rawwidth=&quot;600&quot; data-rawheight=&quot;396&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;600&quot; data-original=&quot;https://pic4.zhimg.com/db3639627a347d0cb9ce1381b6cf2623_r.png&quot;&gt;&lt;br&gt;&lt;br&gt;每秒钟爬取下来成百上千的数据，在屏幕上快速滚动着。这时候最适合在同学面前装逼了。&lt;br&gt;&lt;br&gt;▋&lt;b&gt;目标3：学会使用 MongoDB 对数据进行统计与分析&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/004472c536204840e0f74be3bb07c1cb_b.png&quot; data-rawwidth=&quot;600&quot; data-rawheight=&quot;409&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;600&quot; data-original=&quot;https://pic4.zhimg.com/004472c536204840e0f74be3bb07c1cb_r.png&quot;&gt;&lt;br&gt;&lt;br&gt;仅仅是大量数据没有意义，还需要挖掘出来数据背后的意义。哪一类二手商品卖的最多？什么价格出手最合适？&lt;br&gt;&lt;br&gt;▋&lt;b&gt;目标4：使用 Django 和 Semantic UI 框架搭建数据可视化的网页&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic3.zhimg.com/d5392f5c331db8f0c4b0e862a592ac6e_b.png&quot; data-rawwidth=&quot;600&quot; data-rawheight=&quot;374&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;600&quot; data-original=&quot;https://pic3.zhimg.com/d5392f5c331db8f0c4b0e862a592ac6e_r.png&quot;&gt;&lt;br&gt;&lt;br&gt;把前面获得的成果进行数据可视化，在网页上展示出来。&lt;br&gt;&lt;br&gt;你可能会问，基础薄弱的话，能学会么？&lt;br&gt;&lt;br&gt;为了让新手能完成这个实战项目，我们把每个目标又拆分成了3个阶段：理解 &amp;gt; 模仿 &amp;gt; 实战。&lt;br&gt;&lt;br&gt;&lt;img src=&quot;https://pic2.zhimg.com/0a802fbc87cb675eba10a41f62f4b4fd_b.png&quot; data-rawwidth=&quot;600&quot; data-rawheight=&quot;339&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;600&quot; data-original=&quot;https://pic2.zhimg.com/0a802fbc87cb675eba10a41f62f4b4fd_r.png&quot;&gt;&lt;br&gt;&lt;br&gt;看到这里，你会发现，这不仅仅是一个练手项目，而是一套专为初学者准备的、经过精心设计的系统课程。&lt;br&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;理解阶段：通过类比和课程案例，你能更轻松的掌握必要的知识。&lt;br&gt;&lt;/li&gt;&lt;li&gt;模仿阶段：正如学习母语，小孩子通过模仿成人说话而记忆。模仿着课程里面的案例，去完成对应的练习题，能加深印象。&lt;br&gt;&lt;/li&gt;&lt;li&gt;实战阶段：每个目标会对应一个大作业，同时也是课程项目的一部分。这时候你没办法再模仿着示例敲代码，而是需要独立解决问题，然后再去听大作业的讲解。经过自己的思考，再听课时你才会有这种感觉，「哇哦，我现在彻底明白了」，而不是「嗯，好像是这么回事」。&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;有零基础的新手评价说：&lt;br&gt;&lt;blockquote&gt;这是唯一能听懂的编程课，感觉和看美剧似的，会上瘾。&lt;/blockquote&gt;&lt;br&gt;他们身上，有了许多改变。&lt;br&gt;&lt;br&gt;有一位同学，他是一名95年的大一学生，参加课程的目标是为了完成参加比赛的项目的内容爬取。&lt;strong&gt;而学习课程的第一周，他就达到了目标&lt;/strong&gt;，参赛项目获得了四位数的奖金支持。&lt;br&gt;&lt;br&gt;还有一位同学，他是一名产品经理，想为自己做一个时间管理的产品。在学习课程之前，还只停留在原型图阶段。而学习课程之后，拥有了亲手创造的能力，&lt;strong&gt;想法终于变成了现实&lt;/strong&gt;。&lt;br&gt;&lt;br&gt;正因为我们自己踩过这样的坑，面对一堆专业术语却看不懂的迷茫与挣扎、找了一堆资料却没有一个能把事说明白的痛苦与无奈。促使我们完成这门课程的最大动力是生气，生气怎么就没有一门符合初学者认知模式的科学体系，于是我们自己做了这门课。对了，它的名字叫：实战计划。&lt;br&gt;&lt;br&gt;期待着为你带来改变。&lt;br&gt;&lt;br&gt;实战计划的课程：&lt;a href=&quot;//link.zhihu.com/?target=http%3A//study.163.com/course/introduction/1002794001.htm%23/courseDetail&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Python实战：四周实现爬虫系统&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//study.163.com/course/introduction/1002794001.htm%23/courseDetail&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Python实战：四周实现爬虫系统&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;第一周课程可以免费预览，完成后可以学会爬取大多数网页。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2016-02-15" target="_blank" href="/question/29372574/answer/86412439">编辑于 07:18</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+<img src="https://pic4.zhimg.com/0ceeca4f258179e2744011e2ffda1d07_200x112.png" data-rawwidth="600" data-rawheight="369" class="origin_image inline-img zh-lightbox-thumb" data-original="https://pic4.zhimg.com/0ceeca4f258179e2744011e2ffda1d07_r.png">
+发现这个问题下面的大多数回答都不适合初学者。找不到好的练手项目可能是新手最头疼的问题。明明知道，只有动手做点东西出来，才能真正学会编程。然而，很难找到适合学习的编程项目。Github 源码，看不懂。九九乘法表之类的项目，太无聊。跟着视频课程敲一…
+
+<a href="/question/29372574/answer/86412439" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-3931839"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>16 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feed-item feed-item-hook  folding combine" itemprop="question" itemscope itemtype="http://schema.org/Question"  data-score="2726.45900233" >
+<meta itemprop="answer-id" content="19296911" />
+<meta itemprop="answerCount" content="22" />
+<meta itemprop="isTopQuestion" content="false" />
+<div class="feed-main">
+
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/29372574">Python 的练手项目有哪些值得推荐？</a></h2>
+<div class="entry-body "
+data-aid="19296911"
+data-atoken="59717504"
+data-collapsed="False"
+data-created="1439869507"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+data-copyable="1"
+>
+
+<div class="zm-item-vote">
+<a class="zm-item-vote-count js-expand js-vote-count" href="javascript:;" data-votecount="25">25</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">25</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+
+<a class="author-link" data-tip="p$t$zhu-yun-fan" href="/people/zhu-yun-fan">朱一凡</a><span title="在昆明IT荒原里坚持" class="bio">，在昆明IT荒原里坚持</span>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="25">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$lecsven" href="https://www.zhihu.com/people/lecsven" class="zg-link" title="lecsven">lecsven</a>、</span><span class="user-block"><a data-tip="p$t$wang-yi-shen-68" href="https://www.zhihu.com/people/wang-yi-shen-68" class="zg-link" title="王艺深">王艺深</a>、</span><span class="user-block"><a data-tip="p$t$yiliu-xiao-pao-20" href="https://www.zhihu.com/people/yiliu-xiao-pao-20" class="zg-link" title="一溜小跑">一溜小跑</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text js-collapse-body" data-resourceid="3931839" data-action="/answer/content" data-author-name="朱一凡" data-entry-url="/question/29372574/answer/59717504">
+
+<textarea class="content hidden">
+上面的回答，作为入门练手项目实在是太高大上了，我看了好惭愧。&lt;br&gt;python 哪里有这么不亲民。请大家和我一起高呼：知呼不装B，从我做起！&lt;br&gt;我刚学python时，做了以下几个工具类，都是为了方便自己：&lt;br&gt;&lt;ol&gt;&lt;li&gt;起点上自动下载txt小说的程序&lt;br&gt;&lt;/li&gt;&lt;li&gt;公司考勤网站自动填写工时（一开始还做登录，后来发现他压根没用户校验，只管往对应url提交form就能接收，国内公司的安全真是..)&lt;br&gt;&lt;/li&gt;&lt;li&gt;结合flex做了个知识库，记录自己的一些小心得&lt;/li&gt;&lt;/ol&gt;另外运维工作，比如ssh自动登录、自动导入数据、迁移数据、格式化数据、自动设置编译等等小工具实在太多了。满足自己才是第一的。&lt;br&gt;&lt;br&gt;当时的感觉，就像我自己掌握了门独门绝技，看着其他人努力的写java/c++ ，我用python轻松几行代码搞定，那叫一个酸爽。&lt;br&gt;这时不会满足当小工具用了，可以参与做一些开源项目了
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/29372574/answer/59717504">发布于 2015-08-18</a>
+</span>
+
+</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+上面的回答，作为入门练手项目实在是太高大上了，我看了好惭愧。python 哪里有这么不亲民。请大家和我一起高呼：知呼不装B，从我做起！我刚学python时，做了以下几个工具类，都是为了方便自己：起点上自动下载txt小说的程序公司考勤网站自动填写工时（一开…
+
+<a href="/question/29372574/answer/59717504" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="zm-item-meta feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-3931839"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>7 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="zu-main-sidebar">
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+<div class="topic-header-side zm-entry-head-wrap">
+
+<div class="clearfix"><div id="zh-topic-side-head">
+
+<a href="javascript:;" id="tf-872" name="focus" class="zg-btn-green zu-entry-focus-button zg-mr10">关注话题</a>
+
+<div class="zm-topic-side-followers-info">
+
+<a href="/topic/19552832/followers"><strong>76702</strong></a> 人关注了该话题
+
+</div>
+</div></div>
+<div style="margin-top: 15px;">
+<a class="zg-link-litblue-normal js-may-disable" href="/topic/19552832/organize">组织</a>
+<span class="zg-bull">•</span>
+<a class="zg-link-litblue-normal js-may-disable" href="/topic/19552832/manage">管理</a>
+<span class="zg-bull">•</span>
+<a class="zg-link-litblue-normal" href="/topic/19552832/log">日志</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+<h3 class="zm-topic-side-organize-title">描述
+</h3>
+<div id="zh-topic-desc" data-resourceid="872" data-action="/topic-introduction">
+<div class="zm-editable-content" data-editable-maxlength="130" >Python 是一种面向对象的解释型计算机程序设计语言，在设计中注重代码的可读性，同时也是一种功能强大的通用型语言。</div>
+</div>
+</div>
+</div>
+<div class="shameimaru-placeholder" data-loc="topic_up" data-params='{&quot;topic_token&quot;: &quot;19552832&quot;}'></div>
+
+<div class="zm-side-section" id="zh-topic-side-parents-list">
+<div class="zm-side-section-inner parent-topic">
+<h3 class="zm-topic-side-organize-title">父话题
+</h3>
+<div class="clearfix">
+
+<a class="zm-item-tag"
+href="/topic/19577377"
+data-tip="t$b$19577377" data-token="19577377" data-topicid="9052">
+脚本语言
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19552826"
+data-tip="t$b$19552826" data-token="19552826" data-topicid="870">
+编程语言
+</a>
+
+</div>
+</div>
+</div>
+<div class="zm-side-section" id="zh-topic-side-children-list">
+<div class="zm-side-section-inner child-topic">
+<h3 class="zm-topic-side-organize-title">子话题
+</h3>
+<div class="clearfix">
+
+<a class="zm-item-tag"
+href="/topic/19661050"
+data-tip="t$b$19661050" data-token="19661050" data-topicid="37027">
+Python 入门
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19606083"
+data-tip="t$b$19606083" data-token="19606083" data-topicid="18668">
+Python 框架
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19572360"
+data-tip="t$b$19572360" data-token="19572360" data-topicid="7388">
+Python 3.x
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19644560"
+data-tip="t$b$19644560" data-token="19644560" data-topicid="31516">
+Python 库
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19710602"
+data-tip="t$b$19710602" data-token="19710602" data-topicid="53655">
+Python 开发
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19560096"
+data-tip="t$b$19560096" data-token="19560096" data-topicid="3304">
+PyPy
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19701025"
+data-tip="t$b$19701025" data-token="19701025" data-topicid="50415">
+pyqt
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19884861"
+data-tip="t$b$19884861" data-token="19884861" data-topicid="113635">
+IPython
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19682832"
+data-tip="t$b$19682832" data-token="19682832" data-topicid="44309">
+Twisted
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19804387"
+data-tip="t$b$19804387" data-token="19804387" data-topicid="85123">
+gevent
+</a>
+
+</div>
+
+<a class="zg-link-litblue zm-topic-side-title-link" href="/topic/19552832/organize/entire#anchor-children-topic">共有 15 个子话题，查看话题结构 » </a>
+
+</div>
+</div>
+
+
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner" id="zh-topic-top-answerer">
+<h3>最佳回答者</h3>
+
+<div class="zm-topic-side-person-item">
+<a href="/people/rednaxelafx" data-tip="p$t$rednaxelafx" class="zm-list-avatar-link">
+<img class="zm-list-avatar" src="https://pic1.zhimg.com/ee07454da2fc6d007c29ca9b393f94ac_s.jpg" />
+</a>
+<div class="zm-topic-side-person-item-content">
+<a href="/people/rednaxelafx" data-tip="p$t$rednaxelafx">RednaxelaFX</a>
+
+<div class="zm-topic-side-bio" title="软件工程师、主攻高级编程语言虚拟机的设计与实现">软件工程师、主攻高级编程语言虚拟机的设计与实现</div>
+
+<div class="zg-gray-normal">
+<a class="gray_link" href="/people/rednaxelafx/topic/19552832/answers">回答了 37 个问题</a>
+
+<span class="zg-bull">&bull;</span>
+<a data-follow="m:link" class="zg-follow" id="pf-a06cfb38e37dac1658e6457df4d7f032" href="javascript:;">关注</a>
+
+</div>
+</div>
+</div>
+
+<div class="zm-topic-side-person-item">
+<a href="/people/tonyseek" data-tip="p$t$tonyseek" class="zm-list-avatar-link">
+<img class="zm-list-avatar" src="https://pic4.zhimg.com/494f13de3_s.jpg" />
+</a>
+<div class="zm-topic-side-person-item-content">
+<a href="/people/tonyseek" data-tip="p$t$tonyseek">松鼠奥利奥</a>
+
+<div class="zm-topic-side-bio" title="Python 受益者">Python 受益者</div>
+
+<div class="zg-gray-normal">
+<a class="gray_link" href="/people/tonyseek/topic/19552832/answers">回答了 42 个问题</a>
+
+<span class="zg-bull">&bull;</span>
+<a data-follow="m:link" class="zg-follow" id="pf-060f2b0fe90dc68ae895411fd27afe87" href="javascript:;">关注</a>
+
+</div>
+</div>
+</div>
+
+<div class="zm-topic-side-person-item">
+<a href="/people/Metaphox" data-tip="p$t$Metaphox" class="zm-list-avatar-link">
+<img class="zm-list-avatar" src="https://pic3.zhimg.com/e93295a8c2287862749f23983d33e24e_s.png" />
+</a>
+<div class="zm-topic-side-person-item-content">
+<a href="/people/Metaphox" data-tip="p$t$Metaphox">涛吴</a>
+
+<div class="zm-topic-side-bio" title="A European Swallow.">A European Swallow.</div>
+
+<div class="zg-gray-normal">
+<a class="gray_link" href="/people/Metaphox/topic/19552832/answers">回答了 20 个问题</a>
+
+<span class="zg-bull">&bull;</span>
+<a data-follow="m:link" class="zg-follow" id="pf-e5fb0aab23f1ebca897594c74d178c79" href="javascript:;">关注</a>
+
+</div>
+</div>
+</div>
+
+<div class="zm-topic-side-person-item">
+<a href="/people/feng-yu-yao" data-tip="p$t$feng-yu-yao" class="zm-list-avatar-link">
+<img class="zm-list-avatar" src="https://pic2.zhimg.com/e6f8b80e1_s.jpg" />
+</a>
+<div class="zm-topic-side-person-item-content">
+<a href="/people/feng-yu-yao" data-tip="p$t$feng-yu-yao">冯昱尧</a>
+
+<div class="zm-topic-side-bio" title="midcore programmer">midcore programmer</div>
+
+<div class="zg-gray-normal">
+<a class="gray_link" href="/people/feng-yu-yao/topic/19552832/answers">回答了 55 个问题</a>
+
+<span class="zg-bull">&bull;</span>
+<a data-follow="m:link" class="zg-follow" id="pf-ad66976c643ab7a1e5e74e62ba6b5291" href="javascript:;">关注</a>
+
+</div>
+</div>
+</div>
+
+<div class="zm-topic-side-person-item">
+<a href="/people/loveQt" data-tip="p$t$loveQt" class="zm-list-avatar-link">
+<img class="zm-list-avatar" src="https://pic4.zhimg.com/6cc78144fed4969434ee35c1f5b0344f_s.jpg" />
+</a>
+<div class="zm-topic-side-person-item-content">
+<a href="/people/loveQt" data-tip="p$t$loveQt">段晓晨</a>
+
+<div class="zm-topic-side-bio" title="匿几天">匿几天 </div>
+
+<div class="zg-gray-normal">
+<a class="gray_link" href="/people/loveQt/topic/19552832/answers">回答了 11 个问题</a>
+
+<span class="zg-bull">&bull;</span>
+<a data-follow="m:link" class="zg-follow" id="pf-fc91ae5ff90c3248f0fd00102d6c0f08" href="javascript:;">关注</a>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="shameimaru-placeholder" data-loc="topic_down" data-params='{&quot;topic_token&quot;: &quot;19552832&quot;}'></div>
+
+</div>
+
+
+</div>
+
+
+<div id="zh-footer" class="zh-footer">
+<div class="content zg-wrap clearfix">
+<ul>
+
+<li><a href="https://liukanshan.zhihu.com" target="_blank">刘看山</a></li>
+
+<li><a href="/question/19581624" target="_blank">知乎指南</a></li>
+<li><a href="javascript:;" id="js-feedback-button">建议反馈</a></li>
+
+<li><a href="/app" target="_blank">移动应用</a></li>
+<li><a href="/careers">加入知乎</a></li>
+<li><a href="/terms" target="_blank">知乎协议</a></li>
+<li><a href="mailto:bd@zhihu.com">商务合作</a></li>
+
+</ul>
+
+<span class="copy">&copy; 2016 知乎</span>
+
+</div>
+</div>
+
+<script type="text/json" class="json-inline" data-name="guiders2">{"exclusive-popover":{},"section":{},"editor":[]}</script>
+<script type="text/json" class="json-inline" data-name="current_user">["\u9ad8\u9633\u9633\u9633\u9633\u98de","gao-yang-yang-81-46","https:\/\/pic4.zhimg.com\/00252a1729c7ee718c08762da1b9201b_s.jpg","3437bd20338c8d3429612c2f1f0fa281","Web\u524d\u7aef\u5de5\u7a0b\u5e08",0,0,true,"1456543560@qq.com","http:\/\/mail.qq.com",0,true,false,false,"72581818351616"]</script>
+<script type="text/json" class="json-inline" data-name="user_status">[null,null]</script>
+<script type="text/json" class="json-inline" data-name="env">["zhihu.com","comet.zhihu.com",false,null]</script>
+<script type="text/json" class="json-inline" data-name="permissions">[]</script>
+
+
+<script type="text/json" class="json-inline" data-name="ga_vars">{"user_created":1416997844000,"now":1455944575000,"abtest_mask":"---------0--------------------","user_attr":[1,0,0,"-",1],"user_hash":"3437bd20338c8d3429612c2f1f0fa281"}</script>
+
+<script type="text/json" class="json-inline" data-name="ra-urls">{"CommentApp":"https:\/\/static.zhihu.com\/static\/revved\/-\/apps\/CommentApp.fb23fa39.js"}</script>
+
+<script type="text/json" class="json-inline" data-name="current_topic">[["Python","19552832","https:\/\/pic1.zhimg.com\/3111ec1cc_s.jpg",872],[["\u811a\u672c\u8bed\u8a00","19577377","https:\/\/pic1.zhimg.com\/41b278ee0_s.jpg"],["\u7f16\u7a0b\u8bed\u8a00","19552826","https:\/\/pic3.zhimg.com\/13753a176_s.jpg"]],0,0,"",0]</script>
+
+<script src="https://static.zhihu.com/static/revved/-/js/vendor.ff76fbae.js"></script>
+<script src="https://static.zhihu.com/static/revved/-/js/closure/common.7a263ff5.js"></script>
+
+
+<script src="https://static.zhihu.com/static/revved/-/js/closure/richtexteditor.4a7a6520.js" async></script>
+<script src="https://static.zhihu.com/static/revved/-/js/closure/page-main.8ff6a179.js"></script>
+<meta name="entry" content="ZH.entryT" data-module-id="page-main">
+
+<script type="text/zscript" znonce="ce65745dbaca4ad6b48f38ad5ad94303"></script>
+
+<input type="hidden" name="_xsrf" value="7740aa2f0c1c776d92d2cf948b8ed33d"/>
+</body>
+</html>
